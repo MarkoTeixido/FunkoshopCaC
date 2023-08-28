@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Funkoshop</title>
 </head>
 <body>
+    <!--Header section with NavBar-->
     <header>
         <div id="logo">
             <a href="/"><img src="https://res-console.cloudinary.com/dnlrsiops/thumbnails/v1/image/upload/v1693123959/RnVua29zaG9wL2xvZ29fbGlnaHRfaG9yaXpvbnRhbF9ncDd3aGU=/preview" alt=""></a>
@@ -25,68 +27,91 @@
                 <li><a href="/"><img src="https://res.cloudinary.com/dnlrsiops/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1693123918/Funkoshop/cart-icon_ltkktx.jpg?_s=public-apps" alt=""></a></li>
             </ul>
         </nav>
-        
-        <main>
-            <h1>Nuevos Ingresos</h1>
-            <p>Descubrí el próximo Funko Pop de tu colección</p>
-            <button>Shop</button>
-        </main>
     </header>
+
+    <!--main content section-->
+    <main>
+        <h1>Nuevos Ingresos</h1>
+        <p>Descubrí el próximo Funko Pop de tu colección</p>
+        <button>Shop</button>
+    </main>
     
-    <article>
-        <article id="primer-section">
-            <div>
-                <h3>STAR WARS & THE MANDALORIAN</h3>
-                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <hr>
-                <button>VER COLECCIÓN</button>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </article>
-        <article id="segundo-section">
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h3>POKEMON INDIGO</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <hr>
-                <button>VER COLECCIÓN</button>
-            </div>
-        </article>
-        <article id="tercer-section">
-            <div>
-                <h3>HARRY POTTER</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <hr>
-                <button>VER COLECCIÓN</button>
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </article>
+    <!--all articles section-->
+    <article id="primer-section">
+        <div>
+            <h3>STAR WARS & THE MANDALORIAN</h3>
+            <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+            <hr>
+            <button>VER COLECCIÓN</button>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+    </article>
+    <article id="segundo-section">
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <h3>POKEMON INDIGO</h3>
+            <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+            <hr>
+            <button>VER COLECCIÓN</button>
+        </div>
+    </article>
+    <article id="tercer-section">
+        <div>
+            <h3>HARRY POTTER</h3>
+            <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+            <hr>
+            <button>VER COLECCIÓN</button>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
     </article>    
 
-    <section>
+    <!--Slider Section-->
+    <section id="slider-articulos">
         <h2>ÚLTIMOS LANZAMIENTOS</h2>
-        <ul>
-            <li>
-                <!--FunkoPop card-->
-            </li>
-            <li>
-                <!--FunkoPop card-->
-            </li>
-            <li>
-                <!--FunkoPop card-->
-            </li>
-            <li>
-                <!--FunkoPop card-->
-            </li>
-        </ul>
+
+        <i class="fa-solid fa-angle-left"></i>
+        <!--FunkoPop card-->
+        <article>
+            <img src="" alt="">
+            <div>
+                <p>STAR WARS</p>
+                <h3>STORMTROOPER LIGHTSABER</h3>
+                <p>&#36; 1799,99</p>
+                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+            </div>
+        </article>
+
+        <!--FunkoPop card-->    
+        <article>
+            <img src="" alt="">
+            <div>
+                <p>POKEMON</p>
+                <h3>PIDGEOTTO</h3>
+                <p>&#36; 1799,99</p>
+                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+            </div>
+        </article>
+
+        <!--FunkoPop card-->
+        <article>
+            <img src="" alt="">
+            <div>
+                <p>HARRY POTTER</p>
+                <h3>LUNA LOVEGOOD LION MASK</h3>
+                <p>&#36; 1799,99</p>
+                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+            </div>
+        </article>
+        <i class="fa-solid fa-angle-right"></i>
     </section>
 
+    <!--Footer section-->
     <footer>
         <div>
             <div>
@@ -100,7 +125,7 @@
                 <img src="https://res.cloudinary.com/dnlrsiops/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1693127793/Funkoshop/isotype_x2nzen.jpg?_s=public-apps" alt="">
             </div>
         </div>
-        <p>All rights reserved 2023 - Funkoshop &copy</p>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 
 </body>
