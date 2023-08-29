@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Shop</title>
+</head>
+<body>
+    <!--Header section with NavBar-->
+    <header>
+        <div id="logo">
+            <a href="/"><img src="" alt=""></a>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/">SHOP</a>
+                    <ul>
+                        <li><a href="/">ALGO 1</a></li>
+                        <li><a href="/">ALGO 2</a></li>
+                        <li><a href="/">ALGO 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">CONTACTO</a></li>
+                <li><a href="/">LOGIN</a></li>
+                <li><a href="/"><img src="" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Search-Sidebar section-->
+        <aside>
+            <section>
+                <label for="search">BUSCAR</label>
+                <input type="text" name="buscar" placeholder="item o categoria">
+                <label for="order by">ORDENAR POR</label>
+                <select name="ordenar-por">
+                    <option value="price-ascending" selected>Mayor a menor</option>
+                    <option value="price-descending">Menor a mayor</option>
+                    <option value="alpha-ascending">A-Z</option>
+                    <option value="alpha-descending">Z-A</option>
+                </select>
+                <label for="price">PRECIO</label>
+                <form method="post">
+                    <span>MIN</span>
+                    <input type="number" placeholder="0">
+                    <span>- MAX</span>
+                    <input type="number" placeholder="0">
+                </form>
+                <label for="filter">FILTRAR</label>
+                <form method="post">
+                    <input type="checkbox">
+                    <label for="new">NUEVOS</label>
+                    <input type="checkbox">
+                    <label for="offers">OFERTAS</label>
+                    <input type="checkbox">
+                    <label for="special-edition">EDICIÓN ESPECIAL</label>
+                    <input type="checkbox">
+                    <label for="favorites">FAVORITOS</label>
+                </form>
+            </section>
+        </aside>
+
+        <!--Show cards with pagination-->
+        <div>
+            <div>
+                <!--FunkoPop cards-->
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <p>STAR WARS</p>
+                        <h3>STORMTROOPER LIGHTSABER</h3>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <p>POKEMON</p>
+                        <h3>PIDGEOTTO</h3>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <p>HARRY POTTER</p>
+                        <h3>LUNA LOVEGOOD LION MASK</h3>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+            </div>
+            
+            <!--Pagination-->
+            <section>
+                <ul>
+                    <li><a href="/"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li><a href="/" class="active">1</a></li>
+                    <li><a href="/">2</a></li>
+                    <li><a href="/">...</a></li>
+                    <li><a href="/">9</a></li>
+                    <li><a href="/">10</a></li>
+                    <li><a href="/"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </section>
+        </div>   
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="/">SHOP</a></li>
+                    <li><a href="/">INGRESAR</a></li>
+                    <li><a href="/">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+</body>
+</html>
