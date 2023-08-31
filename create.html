@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Crear Item</title>
+</head>
+
+<body>
+    <!--Header section with NavBar-->
+    <header>
+        <div id="logo">
+            <a href="/"><img src="" alt=""></a>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/">VER TIENDA</a></li>
+                <li><a href="/">ADMIN</a></li>
+                <li><a href="/">SALIR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main content section-->
+    <main>
+        <section id="section-register__item">
+            <h2>CREAR NUEVO ITEM</h2>
+            <div id="container-form__item">
+                <form action="" method="post" id="formItem">
+
+                    <label for="category">Categoria:</label>
+                    <select id="category" name="categoria">
+                        <option disabled selected>Seleccionar</option>
+                        <option value="starWars">Star Wars</option>
+                        <option value="pokemon">Pokemon</option>
+                        <option value="harryPotter">Harry Potter</option>
+                    </select>
+
+                    <label for="license">Licencia:</label>
+                    <select id="license" name="licencia">
+                        <option disabled selected>Seleccionar</option>
+                        <option value="licenNarutoShippuden">Naruto Shippuden</option>
+                        <option value="licenPokemon">Pokemon</option>
+                    </select>
+
+                    <label for="nameProduct">Nombre del producto:</label>
+                    <input type="text" name="nombreProducto" id="nameProduct"
+                        placeholder="Kakashi Hatake Shippuden Saga">
+
+                    <textarea name="descriProduct" id="descriptionProduct"
+                        placeholder="Descripcion del producto"></textarea>
+
+                    <label for="sku">SKU:</label>
+                    <input id="sku" name="sku" type="text" placeholder="SSK111AB001">
+
+                    <label for="price">Precio:</label>
+                    <input id="price" name="precio" type="number" placeholder="$0.000,00">
+
+                    <label for="stock">Stock:</label>
+                    <input id="stock" name="stock" type="number" placeholder="0">
+
+                    <label for="discount">Descuento:</label>
+                    <input id="discount" name="descuento" type="number" placeholder="0%">
+
+                    <label for="cuotas">Cuotas:</label>
+                    <select id="cuotas" name="cuotas">
+                        <option selected>3 Cuotas sin interes</option>
+                        <option value="seisCuotas">6 Cuotas sin interes</option>
+                        <option value="doceCuotas">12 Cuotas sin interes</option>
+                        <option value="dieciOchoCuotas">18 Cuotas sin interes</option>
+                        <option value="veintiCuatroCuotas">24 Cuotas sin interes</option>
+                    </select>
+
+                    <label for="image">Imágenes:</label>
+                    <input type="file" name="image" id="image" accept="image/*" multiple>
+
+                    <button type="submit">Agregar Producto</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="/">SHOP</a></li>
+                    <li><a href="/">REGISTRARSE</a></li>
+                    <li><a href="/">INGRESAR</a></li>
+                    <li><a href="/">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+
+</html>
