@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>Funkoshop</title>
+</head>
+<body>
+     <!--Header section with NavBar-->
+     <header>
+        <div id="logo">
+            <a href="/"><img src="" alt=""></a>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="/">VER TIENDA</a></li>
+                <li><a href="/">ADMIN</a></li>
+                <li><a href="/">SALIR</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <!--Edit content section-->
+    <main>
+        <section>
+            <div>
+                <h1>EDITAR ITEM</h1>
+            </div>
+
+            <div>
+                <label for="categoria">Categoría:</label>
+                <select name="categoria">
+                    <option value="figuras-naruto">Naruto</option>
+                    <option value="figuras-pokemon">Pokemon</option>
+                </select>
+
+                <label for="licencia">Licencia:</label>
+                <select name="licencia">
+                    <option value="licencia-naruto">Naruto Shippuden</option>
+                    <option value="licencia-pokemon">Pokemon</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nombre-producto">Nombre del producto:</label> 
+                <input type="text" id="nombre-producto" />
+            </div>
+
+            <div>
+                <textarea name="texto" rows="4" cols="40" placeholder="Descripción del producto"></textarea>
+            </div>
+
+            <div>
+                <label for="sku">SKU:</label> 
+                <input type="text" id="sku" />
+
+                <label for="precio">Precio:</label> 
+                <input type="text" id="precio" />
+
+                <label for="stock">Stock:</label> 
+                <input type="text" id="stock" />
+            </div>
+
+            <div>
+                <label for="descuento">Descuento:</label> 
+                <input type="text" id="descuento" />
+                
+                <label for="cuotas">Cuotas:</label>
+                <select name="cuotas" id="cuotas">
+                    <option value="numero-cuotas">3 Cuotas sin interés</option>
+                    <option value="numero-cuotas">6 Cuotas sin interés</option>
+                    <option value="numero-cuotas">12 Cuotas sin interés</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="imagenes">Imágenes:</label>
+                <input type="file" id="imagenes">
+
+                <!--FunkoPop card-->
+                <article>
+                    <img src="" alt="">
+                    <p>Frente</p>
+
+                    <img src="" alt=""> 
+                    <p>Dorso</p>
+                </article>
+
+                <input type="button" value="Modificar Producto">
+            </div>
+
+        </section>
+    </main>
+
+
+    <!--Footer section-->
+        <div>
+            <div>
+                <ul>
+                    <li><a href="/">SHOP</a></li>
+                    <li><a href="/">REGISTRARSE</a></li>
+                    <li><a href="/">INGRESAR</a></li>
+                    <li><a href="/">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        
+</body>
+</html>
