@@ -10,10 +10,12 @@
 <body>
     <!--Header section with NavBar-->
     <header>
-        <div id="logo">
-            <a href="/"><img src="" alt=""></a>
-        </div>
-        <nav id="navbar">
+        <picture>
+            <a href="/">
+                <img src="" alt="">
+            </a>
+        </picture>
+        <nav>
             <ul>
                 <li><a href="/">SHOP</a>
                     <ul>
@@ -28,90 +30,108 @@
             </ul>
         </nav>
     </header>
+    <!--Header section with NavBar end-->
 
     <!--Main content section-->
     <main>
-        <img src="" alt="">
-        <h1>Nuevos Ingresos</h1>
-        <p>Descubrí el próximo Funko Pop de tu colección</p>
-        <button>Shop</button>
+        <!--Banner section-->
+        <section>
+            <!--aca agregar imagen con 'background' en css-->
+            <h1>Nuevos Ingresos</h1>
+            <p>Descubrí el próximo Funko Pop de tu colección</p>
+            <button>Shop</button>
+        </section>
+        <!--Banner section end-->
+
+        <!--All articles section-->
+        <section>
+            <article>
+                <div>
+                    <h3>STAR WARS & THE MANDALORIAN</h3>
+                    <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                    <hr>
+                    <button>VER COLECCIÓN</button>
+                </div>
+                <picture>
+                    <img src="" alt="">
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <img src="" alt="">
+                </picture>
+                <div>
+                    <h3>POKEMON INDIGO</h3>
+                    <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                    <hr>
+                    <button>VER COLECCIÓN</button>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h3>HARRY POTTER</h3>
+                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
+                    <hr>
+                    <button>VER COLECCIÓN</button>
+                </div>
+                <picture>
+                    <img src="" alt="">
+                </picture>
+            </article>    
+
+            <!--Slider Section-->
+            <section>
+                <h2>ÚLTIMOS LANZAMIENTOS</h2>
+
+                <i class="fa-solid fa-angle-left"></i>
+                <!--FunkoPop card-->
+                <article>
+                    <picture>
+                        <img src="" alt="">
+                    </picture>
+                    <div>
+                        <p>STAR WARS</p>
+                        <h4>STORMTROOPER LIGHTSABER</h4>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+
+                <!--FunkoPop card-->    
+                <article>
+                    <picture>
+                        <img src="" alt="">
+                    </picture>
+                    <div>
+                        <p>POKEMON</p>
+                        <h4>PIDGEOTTO</h4>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+
+                <!--FunkoPop card-->
+                <article>
+                    <picture>
+                        <img src="" alt="">
+                    </picture>
+                    <div>
+                        <p>HARRY POTTER</p>
+                        <h4>LUNA LOVEGOOD LION MASK</h4>
+                        <p>&#36; 1799,99</p>
+                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
+                    </div>
+                </article>
+                <i class="fa-solid fa-angle-right"></i>
+            </section>
+
+            <!--Slider section end-->
+        </section>
+
+        <!--All articles and slider section end-->
     </main>
+    <!--Main content section end-->
     
-    <!--all articles section-->
-    <article id="primer-section">
-        <div>
-            <h3>STAR WARS & THE MANDALORIAN</h3>
-            <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-            <hr>
-            <button>VER COLECCIÓN</button>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </article>
-    <article id="segundo-section">
-        <div>
-            <img src="" alt="">
-        </div>
-        <div>
-            <h3>POKEMON INDIGO</h3>
-            <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-            <hr>
-            <button>VER COLECCIÓN</button>
-        </div>
-    </article>
-    <article id="tercer-section">
-        <div>
-            <h3>HARRY POTTER</h3>
-            <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-            <hr>
-            <button>VER COLECCIÓN</button>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </article>    
-
-    <!--Slider Section-->
-    <section id="slider-articulos">
-        <h2>ÚLTIMOS LANZAMIENTOS</h2>
-
-        <i class="fa-solid fa-angle-left"></i>
-        <!--FunkoPop card-->
-        <article>
-            <img src="" alt="">
-            <div>
-                <p>STAR WARS</p>
-                <h3>STORMTROOPER LIGHTSABER</h3>
-                <p>&#36; 1799,99</p>
-                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-            </div>
-        </article>
-
-        <!--FunkoPop card-->    
-        <article>
-            <img src="" alt="">
-            <div>
-                <p>POKEMON</p>
-                <h3>PIDGEOTTO</h3>
-                <p>&#36; 1799,99</p>
-                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-            </div>
-        </article>
-
-        <!--FunkoPop card-->
-        <article>
-            <img src="" alt="">
-            <div>
-                <p>HARRY POTTER</p>
-                <h3>LUNA LOVEGOOD LION MASK</h3>
-                <p>&#36; 1799,99</p>
-                <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-            </div>
-        </article>
-        <i class="fa-solid fa-angle-right"></i>
-    </section>
-
     <!--Footer section-->
     <footer>
         <div>
@@ -122,12 +142,12 @@
                     <li><a href="/">CONTACTO</a></li>
                 </ul>
             </div>
-            <div>
+            <picture>
                 <img src="" alt="">
-            </div>
+            </picture>
         </div>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-
+    <!--Footer section end-->
 </body>
 </html>
