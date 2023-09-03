@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <title>Funkoshop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    <title>Edit | Funkoshop</title>
 </head>
+
 <body>
-     <!--Header section with NavBar-->
-     <header>
-        <div id="logo">
+    <!--Header section with NavBar-->
+    <header>
+        <picture>
             <a href="/"><img src="" alt=""></a>
-        </div>
-        <nav id="navbar">
+        </picture>
+        <nav>
             <ul>
                 <li><a href="/">VER TIENDA</a></li>
                 <li><a href="/">ADMIN</a></li>
@@ -21,26 +25,28 @@
             </ul>
         </nav>
     </header>
+    <!--Header section with NavBar end-->
    
     <!--Edit content section-->
     <main>
+        <h1>EDITAR ITEM</h1>
         <section>
             <div>
-                <h1>EDITAR ITEM</h1>
-            </div>
-
-            <div>
-                <label for="categoria">Categoría:</label>
-                <select name="categoria">
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select name="categoria">
                     <option value="figuras-naruto">Naruto</option>
                     <option value="figuras-pokemon">Pokemon</option>
                 </select>
-
-                <label for="licencia">Licencia:</label>
-                <select name="licencia">
+                </div>
+                
+                <div>
+                    <label for="licencia">Licencia:</label>
+                    <select name="licencia">
                     <option value="licencia-naruto">Naruto Shippuden</option>
                     <option value="licencia-pokemon">Pokemon</option>
                 </select>
+                </div> 
             </div>
 
             <div>
@@ -53,19 +59,27 @@
             </div>
 
             <div>
-                <label for="sku">SKU:</label> 
-                <input type="text" id="sku" />
+                <div>
+                    <label for="sku">SKU:</label> 
+                    <input type="text" id="sku" />
+                </div>
+                
+                <div>
+                    <label for="precio">Precio:</label> 
+                    <input type="text" id="precio" />
+                </div>
 
-                <label for="precio">Precio:</label> 
-                <input type="text" id="precio" />
-
-                <label for="stock">Stock:</label> 
-                <input type="text" id="stock" />
+                <div>
+                    <label for="stock">Stock:</label> 
+                    <input type="text" id="stock" />
+                </div>  
             </div>
 
             <div>
-                <label for="descuento">Descuento:</label> 
-                <input type="text" id="descuento" />
+                <div>
+                    <label for="descuento">Descuento:</label> 
+                    <input type="text" id="descuento" />
+                </div>
                 
                 <label for="cuotas">Cuotas:</label>
                 <select name="cuotas" id="cuotas">
@@ -78,24 +92,30 @@
             <div>
                 <label for="imagenes">Imágenes:</label>
                 <input type="file" id="imagenes">
+            </div>
 
-                <!--FunkoPop card-->
-                <article>
+            <div>
+                <div>
                     <img src="" alt="">
                     <p>Frente</p>
-
-                    <img src="" alt=""> 
+                </div>
+                
+                <div>
+                    <img src="" alt="">
                     <p>Dorso</p>
-                </article>
+                </div>
+            </div>
 
+            <div>
                 <input type="button" value="Modificar Producto">
             </div>
 
         </section>
     </main>
-
+    <!--Edit content section end-->
 
     <!--Footer section-->
+    <footer>
         <div>
             <div>
                 <ul>
@@ -105,11 +125,12 @@
                     <li><a href="/">CONTACTO</a></li>
                 </ul>
             </div>
-            <div>
+            <picture>
                 <img src="" alt="">
-            </div>
+            </picture>
         </div>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
-        
+    </footer>
+    <!--Footer section end-->    
 </body>
 </html>
