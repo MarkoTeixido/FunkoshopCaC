@@ -3,19 +3,19 @@
 :root{
     /* Color palette */
     --primary-solid: #FF3333;
-    --primary-900: rgba(255, 51, 51, 0,9);
-    --primary-500: rgba(255, 51, 51, 0,5);
-    --primary-300: rgba(255, 51, 51, 0,3);
+    --primary-900: rgba(255, 51, 51, 0.9);
+    --primary-500: rgba(255, 51, 51, 0.5);
+    --primary-300: rgba(255, 51, 51, 0.3);
 
     --secondary-solid: #1D84B5;
-    --secondary-900: rgba(29, 132, 181, 0,9);
-    --secondary-500: rgba(29, 132, 181, 0,5);
-    --secondary-300: rgba(29, 132, 181, 0,3);
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
 
     --dark-solid: #1f1f1f;
-    --dark-900: rgba(31, 31, 31, 0,9);
-    --dark-500: rgba(31, 31, 31, 0,5);
-    --dark-300: rgba(31, 31, 31, 0,3);
+    --dark-900: rgba(31, 31, 31, 0.9);
+    --dark-500: rgba(31, 31, 31, 0.5);
+    --dark-300: rgba(31, 31, 31, 0.3);
 
     --dark-background-solid: #30343F;
     --light-background-solid: #FAFAFF;
@@ -25,7 +25,7 @@
 
     /* Typography */
     --primary-font: 'Inter', sans-serif;
-    --secundary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
 
     /* Font Sizes */
     /* Agregar 'font-size = 62.5%' en el tag 'html' */
