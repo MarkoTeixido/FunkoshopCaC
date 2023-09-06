@@ -28,10 +28,9 @@ ul, ol {
     list-style-type: none;
 }
 
-/*img {
+img {
     width: 100%;
 }
-*/
 
 input[type="text"]::placeholder {
     color: var(--dark-300);

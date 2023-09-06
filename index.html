@@ -13,25 +13,40 @@
 <body>
     <!--Header section with NavBar-->
     <header>
-        <nav>
-            <div>
+        <nav class="navbar container">
+            <div class="navbar-logo">
                 <a href="./index.html">
                     <img src="./images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
                 </a>
             </div>
-            <ul>
-                <li><a href="./pages/shop.html">SHOP</a>
-                    <ul>
-                        <li><a href="/">ALGO 1</a></li>
-                        <li><a href="/">ALGO 2</a></li>
-                        <li><a href="/">ALGO 3</a></li>
+            <ul class="navbar-menu">
+                <li class="navbar-item with-submenu">
+                    <a class="navbar-link with-icon" href="./pages/shop.html">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Funkos</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Ropa</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Accesorios</a>
+                        </li>
                     </ul>
                 </li>
                 <!--Luego realizar la página de contacto-->
-                <li><a href="./index.html">CONTACTO</a></li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./index.html">CONTACTO</a>
+                </li>
                 <!--Luego realizar la página de contacto-->
-                <li><a href="./pages/login.html">LOGIN</a></li>
-                <li><a href="./pages/carrito.html"><img src="./images/icons/cart-icon.svg" alt="Icono de carrito"></a></li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-item-cart" href="./pages/carrito.html">
+                        <img src="./images/icons/cart-icon.svg" alt="Icono de carrito">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -40,120 +55,144 @@
     <!--Main content section-->
     <main>
         <!--Banner section-->
-        <section>
-            <!--aca agregar imagen con 'background' en css-->
-            <h1>Nuevos Ingresos</h1>
-            <p>Descubrí el próximo Funko Pop de tu colección</p>
-            <button>Shop</button>
+        <section class="hero">
+            <article class="hero-content container">
+                <h1 class="hero-title">Nuevos Ingresos</h1>
+                <p class="hero-text">Descubrí el próximo Funko Pop de tu colección</p>
+                <a class="hero-link" href="./pages/shop.html">Shop</a>
+            </article>
         </section>
         <!--Banner section end-->
 
         <!--All articles section-->
-        <section>
-            <article>
-                <div>
-                    <h3>STAR WARS & THE MANDALORIAN</h3>
-                    <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                    <hr>
-                    <button>VER COLECCIÓN</button>
+        <section class="container">
+            <article class="collection">
+                <div class="collection-content">
+                    <h3 class="collection-title">STAR WARS & THE MANDALORIAN</h3>
+                    <p class="collection-text">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                    <a class="collection-link" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
                 <picture>
                     <img src="./images/star-wars/baby-yoda-1.webp" alt="Figura coleccionable funko - Baby Yoda">
                 </picture>
-            </article>
-            <article>
+            </article class="container">
+            <article class="collection">
                 <picture>
                     <img src="./images/pokemon/vulpix-1.webp" alt="Figura coleccionable funko - Vulpix">
                 </picture>
-                <div>
-                    <h3>POKEMON INDIGO</h3>
-                    <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                    <hr>
-                    <button>VER COLECCIÓN</button>
+                <div class="collection-content">
+                    <h3 class="collection-title">POKEMON INDIGO</h3>
+                    <p class="collection-text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                    <a class="collection-link" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <h3>HARRY POTTER</h3>
-                    <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                    <hr>
-                    <button>VER COLECCIÓN</button>
+            </article class="container">
+            <article class="collection">
+                <div class="collection-content">
+                    <h3 class="collection-title">HARRY POTTER</h3>
+                    <p class="collection-text">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                    <a class="collection-link" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
                 <picture>
                     <img src="./images/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable funko - Snape Patronus">
                 </picture>
-            </article>    
-
-            <!--Slider Section-->
-            <section>
-                <h2>ÚLTIMOS LANZAMIENTOS</h2>
-
-                <i class="fa-solid fa-angle-left"></i>
-                <!--FunkoPop card-->
-                <article>
-                    <picture>
-                        <img src="./images/star-wars/trooper-1.webp" alt="Figura coleecionable funko - Stormtrooper">
-                    </picture>
-                    <div>
-                        <p>STAR WARS</p>
-                        <h4>STORMTROOPER LIGHTSABER</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
-                </article>
-
-                <!--FunkoPop card-->    
-                <article>
-                    <picture>
-                        <img src="./images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
-                    </picture>
-                    <div>
-                        <p>POKEMON</p>
-                        <h4>PIDGEOTTO</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
-                </article>
-
-                <!--FunkoPop card-->
-                <article>
-                    <picture>
-                        <img src="./images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
-                    </picture>
-                    <div>
-                        <p>HARRY POTTER</p>
-                        <h4>LUNA LOVEGOOD LION MASK</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
-                </article>
-                <i class="fa-solid fa-angle-right"></i>
-            </section>
-
-            <!--Slider section end-->
+            </article>
         </section>
+        <!--All articles and slider section end-->    
 
-        <!--All articles and slider section end-->
+        <!--Slider Section-->
+        <section class="container">
+            <article class="slider">
+                <h2 class="slider-title">ÚLTIMOS LANZAMIENTOS</h2>
+                
+                <!--falta terminar--
+                <button class="slider-buttons"><i class="fa-solid fa-angle-left"></i></button>
+                -->
+
+                <!--FunkoPop cards-->
+                <ul class="slider-articles">
+                    <li class="slider-items">
+                        <article class="card">
+                            <a class="card-link" href="#">
+                                <picture class="card-image">
+                                    <span class="card-image-tag">NUEVO</span>
+                                    <img class="card-image__front" src="./images/star-wars/trooper-1.webp" alt="Figura coleecionable funko - Stormtrooper">
+                                    <img class="card-image__back" src="./images/star-wars/trooper-box.webp" alt="Figura coleecionable funko - Stormtrooper Box">
+                                </picture>
+                                <div class="card-content">
+                                    <p class="card-content-category">STAR WARS</p>
+                                    <h4 class="card-content-name">STORMTROOPER LIGHTSABER</h4>
+                                    <p class="card-content-price">&#36; 1799,99</p>
+                                    <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider-items">
+                        <article class="card">
+                            <a class="card-link" href="#">
+                                <picture class="card-image">
+                                    <span class="card-image-tag">NUEVO</span>
+                                    <img class="card-image__front" src="./images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
+                                    <img class="card-image__back" src="./images/pokemon/pidgeotto-box.webp" alt="Figura coleecionable funko - Pidgeotto Box">
+                                </picture>
+                                <div class="card-content">
+                                    <p class="card-content-category">POKEMON</p>
+                                    <h4 class="card-content-name">PIDGEOTTO</h4>
+                                    <p class="card-content-price">&#36; 1799,99</p>
+                                    <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider-items">
+                        <article class="card">
+                            <a class="card-link" href="#">
+                                <picture class="card-image">
+                                    <span class="card-image-tag">NUEVO</span>
+                                    <img class="card-image__front" src="./images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
+                                    <img class="card-image__back" src="./images/harry-potter/luna-box.webp" alt="Figura coleecionable funko - Luna Lovegood Box">
+                                </picture>
+                                <div class="card-content">
+                                    <p class="card-content-category">HARRY POTTER</p>
+                                    <h4 class="card-content-name">LUNA LOVEGOOD LION MASK</h4>
+                                    <p class="card-content-price">&#36; 1799,99</p>
+                                    <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+                <!--falta terminar--
+                <button class="slider-buttons"><i class="fa-solid fa-angle-right"></i></button>
+                -->
+            </article>
+        </section>
+        <!--Slider section end-->
+
     </main>
     <!--Main content section end-->
     
     <!--Footer section-->
     <footer>
-        <div>
-            <div>
-                <ul>
-                    <li><a href="./pages/shop.html">SHOP</a></li>
-                    <li><a href="./pages/login.html">INGRESAR</a></li>
-                    <!--Luego realizar la página de contacto-->
-                    <li><a href="./index.html">CONTACTO</a></li>
-                    <!--Luego realizar la página de contacto-->
-                </ul>
-            </div>
-            <picture>
+        <nav class="navbar container">
+            <ul class="footer-navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/login.html">INGRESAR</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./index.html">CONTACTO</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+            </ul>
+            <picture class="footer-img">
                 <img src="./images/branding/isotype.svg" alt="Isotipo de Funkoshop">
             </picture>
-        </div>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        </nav>
+        <p class="footer-copyright">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Footer section end-->
 </body>
