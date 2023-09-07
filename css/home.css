@@ -16,7 +16,7 @@ header{
     padding: var(--spacing-28);
 }
 
-.navbar{
+.navbar-header{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -299,6 +299,11 @@ footer{
     padding: 5rem;
 }
 
+.navbar-footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
 .footer-navbar-menu{
     align-items: center;
 }
@@ -314,4 +319,159 @@ footer{
     padding: var(--spacing-36) 0 0 0;
 }
 
-/* Footer style end*/
+/* Footer style end */
+
+/*------------------------*/
+/* Responsive web design */
+/*------------------------*/
+
+/* Phone */
+
+@media screen and (max-width:450px) {
+    
+    /* Header style */
+
+    header{
+        background-color: var(--dark-background-solid);
+        padding: var(--spacing-28);
+    }
+    
+    .navbar-header{
+        max-width: 400px;
+    }
+    
+    .navbar-logo{
+        max-width: 180px;
+        min-width: 180px;
+    }
+    
+    .navbar-menu{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-20);
+    }
+    
+
+    /* Banner style */
+
+    .hero{
+        padding: var(--spacing-68);
+    }
+
+    .hero-content{
+        align-items: center;
+        max-width: 450px;
+    }
+
+    .hero-title{
+        text-align: center;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+
+    /* All articles style */
+
+    .collection{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        padding: var(--spacing-8);
+    }
+
+    .collection:first-child .collection-image{
+        order: -1;
+    }
+
+    .collection:last-child .collection-image{
+        order: -1;
+    }
+
+    .collection-content{
+        gap: var(--spacing-8);
+        align-items: start;
+    }
+
+    .collection-title{
+        font-family: var(--secondary-font);
+        font-size: var(--font-display);
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .collection-text{
+        font-family: var(--secondary-font);
+        font-size: var(--font-large);
+        font-weight: 300;
+        border-bottom: 3px solid var(--secondary-solid);
+        padding-bottom: var(--spacing-20);
+        text-align: center;
+    }
+    
+    .collection-link{
+        display: inline-block;
+        font-size: var(--font-medium);
+        color: var(--light-font-solid);
+        background-color: var(--dark-background-solid);
+        padding: var(--spacing-16) var(--spacing-36);
+        border-radius: 50px;
+        font-weight: 400;
+        align-self: center;
+    }
+
+
+    /* Slider style */
+
+    .slider{
+        gap: var(--spacing-28);
+        margin: var(--spacing-36);
+    }
+
+    .slider-title{
+        font-size: var(--font-jumbo);
+        text-align: center;
+    }
+
+    .slider-articles{
+        display: flex;
+        gap: var(--spacing-24);
+    }
+
+    .card{
+        min-width: 320px;
+    }
+
+
+    /* Footer style */
+
+    .navbar-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-navbar-menu{
+        text-align: center;
+    }
+
+    .footer-img{
+        max-width: 120px;
+        padding: var(--spacing-20);
+    }
+
+    .footer-copyright{
+        padding: 0;
+    }
+
+}
+
+/* Phone end */
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:992px) {
+    
+}
