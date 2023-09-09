@@ -24,6 +24,7 @@ header{
 
 .navbar-logo{
     max-width: 300px;
+    min-width: 200px;
 }
 
 .navbar-menu{
@@ -333,34 +334,41 @@ footer{
 
     header{
         background-color: var(--dark-background-solid);
-        padding: var(--spacing-28);
+        padding: var(--spacing-24);
     }
     
     .navbar-header{
         max-width: 400px;
+        justify-content: center;
     }
     
     .navbar-logo{
-        max-width: 180px;
-        min-width: 180px;
+        max-width: 150px;
+        min-width: 100px;
     }
     
     .navbar-menu{
-        display: flex;
+        display: none;
         align-items: center;
         gap: var(--spacing-20);
+    }
+
+    .navbar-item-cart{
+        display:none;
     }
     
 
     /* Banner style */
 
     .hero{
-        padding: var(--spacing-68);
+        padding: 3rem;
     }
 
     .hero-content{
         align-items: center;
         max-width: 450px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .hero-title{
