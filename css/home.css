@@ -3,7 +3,7 @@
 
 /* website content width */
 .container{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 /* website content width */
@@ -13,13 +13,14 @@
 
 header{
     background-color: var(--dark-background-solid);
-    padding: var(--spacing-28);
+    
 }
 
 .navbar-header{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: var(--spacing-28) var(--spacing-128);
 }
 
 .navbar-logo{
@@ -84,7 +85,7 @@ header{
     background-size: cover;
     background-attachment: fixed;
     filter: blur(0px);
-    padding: var(--spacing-128);
+    
     position: relative;
 }
 
@@ -105,6 +106,7 @@ header{
     align-items: start;
     z-index: 2;
     position: relative;
+    padding: var(--spacing-68) var(--spacing-128);
 }
 
 .hero-title{
@@ -143,7 +145,7 @@ header{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: var(--spacing-16);
+    padding: var(--spacing-20) var(--spacing-128);
 }
 
 .collection-content{
@@ -334,17 +336,17 @@ footer{
 
     header{
         background-color: var(--dark-background-solid);
-        padding: var(--spacing-24);
+        padding: var(--spacing-8);
     }
     
     .navbar-header{
         max-width: 400px;
         justify-content: center;
+        padding: var(--spacing-8);
     }
     
     .navbar-logo{
         max-width: 150px;
-        min-width: 100px;
     }
     
     .navbar-menu{
