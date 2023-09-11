@@ -74,6 +74,10 @@ header{
     background-color: var(--primary-900);
 }
 
+.bars{
+    display: none;
+}
+
 /* Header style end*/
 
 
@@ -85,7 +89,6 @@ header{
     background-size: cover;
     background-attachment: fixed;
     filter: blur(0px);
-    
     position: relative;
 }
 
@@ -330,7 +333,12 @@ footer{
 
 /* Phone */
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:1000px) {
+
+    .container{
+        max-width: 750px;
+        min-width: 380px;
+    }
     
     /* Header style */
 
@@ -340,8 +348,7 @@ footer{
     }
     
     .navbar-header{
-        max-width: 400px;
-        justify-content: center;
+        min-width: 300px;        
         padding: var(--spacing-8);
     }
     
@@ -350,27 +357,40 @@ footer{
     }
     
     .navbar-menu{
-        display: none;
         align-items: center;
         gap: var(--spacing-20);
     }
 
-    .navbar-item-cart{
-        display:none;
+    .login{
+        display: none;
     }
+
+    .contact{
+        display: none;
+    }
+
+    .with-submenu{
+        display: none;
+    }
+
+    .bars{
+        display: unset;
+        font-size: medium;
+    }
+
     
+
 
     /* Banner style */
 
     .hero{
-        padding: 3rem;
+        padding: 6rem;
     }
 
     .hero-content{
         align-items: center;
-        max-width: 450px;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        min-width: 50px;
+        padding: var(--spacing-8);
     }
 
     .hero-title{
@@ -384,15 +404,17 @@ footer{
 
     /* All articles style */
 
+
     .collection{
         display:grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        padding: var(--spacing-8);
+        padding: 0 var(--spacing-36);
     }
 
     .collection:first-child .collection-image{
         order: -1;
+        margin-left: -50px;
     }
 
     .collection:last-child .collection-image{
@@ -401,7 +423,7 @@ footer{
 
     .collection-content{
         gap: var(--spacing-8);
-        align-items: start;
+        align-items: center;
     }
 
     .collection-title{
@@ -453,8 +475,13 @@ footer{
         min-width: 320px;
     }
 
+}
 
-    /* Footer style */
+/* Phone end */
+
+@media screen and (max-width:750px) {
+
+    /* Footer style */ 
 
     .navbar-footer{
         display: flex;
@@ -473,12 +500,6 @@ footer{
     .footer-copyright{
         padding: 0;
     }
-
-}
-
-/* Phone end */
-
-@media screen and (max-width:768px) {
     
 }
 
