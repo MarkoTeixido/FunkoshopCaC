@@ -196,7 +196,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
-    margin: var(--spacing-68);
+    margin: var(--spacing-12) var(--spacing-128);
 }
 
 .slider-title{
@@ -302,14 +302,18 @@ header{
 
 footer{
     background-color: var(--dark-background-solid);
-    padding: 5rem;
+    padding: var(--spacing-36) var(--spacing-128);
 }
 
 .navbar-footer{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    /* No tengo idea porque funciona con 1150px */
+    max-width: 1150px;
+    /* No tengo idea porque funciona con 1150px */
 }
+
 .footer-navbar-menu{
     align-items: center;
 }
@@ -344,7 +348,7 @@ footer{
 
     header{
         background-color: var(--dark-background-solid);
-        padding: var(--spacing-8);
+        padding: var(--spacing-8) var(--spacing-24);
     }
     
     .navbar-header{
@@ -377,8 +381,6 @@ footer{
         display: unset;
         font-size: medium;
     }
-
-    
 
 
     /* Banner style */
@@ -456,9 +458,13 @@ footer{
 
     /* Slider style */
 
+    .wrapper{
+        padding: var(--spacing-36) 0;
+    }
+
     .slider{
         gap: var(--spacing-28);
-        margin: var(--spacing-36);
+        margin: var(--spacing-24);
     }
 
     .slider-title{
@@ -467,12 +473,25 @@ footer{
     }
 
     .slider-articles{
+        position: relative;
         display: flex;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
         gap: var(--spacing-24);
     }
 
     .card{
-        min-width: 320px;
+        min-width: 350px;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+
+    /* Footer style */
+
+    footer{
+        padding: var(--spacing-16) 0;
     }
 
 }
@@ -500,9 +519,16 @@ footer{
     .footer-copyright{
         padding: 0;
     }
-    
-}
 
-@media screen and (max-width:992px) {
+
+
+
+    .card{
+        width: 300px;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
     
 }
