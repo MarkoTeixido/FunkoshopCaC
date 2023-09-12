@@ -484,14 +484,15 @@ footer{
     .slider-articles{
         position: relative;
         display: flex;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         gap: var(--spacing-24);
     }
 
     .card{
-        min-width: 350px;
+        min-width: 300px;
         left: 0;
         position: sticky;
         object-fit: cover;
@@ -524,8 +525,17 @@ footer{
 
     /* Slider style */
 
+    .slider-articles{
+        width: 350px;  
+    }
+
+    .slider-items{
+        flex-basis: 100%;
+    }
+
     .card{
-        width: 300px;
+        flex-basis: 100%;
+        width: 350px;
         left: 0;
         position: sticky;
         object-fit: cover;
@@ -538,7 +548,7 @@ footer{
     /* Footer style */
     
     footer{
-        padding: 0 var(--spacing-24);
+        padding: var(--spacing-24) var(--spacing-24);
     }
 
     .navbar-footer{
