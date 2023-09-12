@@ -74,7 +74,7 @@ header{
     background-color: var(--primary-900);
 }
 
-.bars{
+.navbar-bars{
     display: none;
 }
 
@@ -192,7 +192,7 @@ header{
     transition: background .2s ease-in-out;
 }
 
-/* All articles style */
+/* All articles style end */
 
 
 /* Slider style */
@@ -386,7 +386,7 @@ footer{
         display: none;
     }
 
-    .bars{
+    .navbar-bars{
         display: unset;
         font-size: medium;
     }
