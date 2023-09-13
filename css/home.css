@@ -475,6 +475,10 @@ footer{
         padding: var(--spacing-36) 0;
     }
 
+    .slider{
+        padding: var(--spacing-24) var(--spacing-24);
+    }
+
     .slider-title{
         font-size: var(--font-jumbo);
         text-align: center;
