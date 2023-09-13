@@ -515,6 +515,10 @@ footer{
         padding: var(--spacing-16) var(--spacing-24);
     }
 
+    .navbar-footer{
+        padding: var(--spacing-24);
+    }
+
     /* Footer style end*/
 
 }
@@ -560,6 +564,7 @@ footer{
     }
 
     .navbar-footer{
+        padding: var(--spacing-8) var(--spacing-24);
         display: flex;
         flex-direction: column;
     }
