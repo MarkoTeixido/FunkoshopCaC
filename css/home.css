@@ -344,12 +344,12 @@ footer{
 
 @media screen and (max-width:1000px) {
 
-    /* website content width */
+    /* website content width 
     .container{
-        max-width: 750px;
-        min-width: 380px;
-    }
-    /* website content width */
+        /*max-width: 750px;*/
+        /*min-width: 380px;*/
+    /*}*/
+     /*website content width */
     
 
     /* Header style */
@@ -359,9 +359,9 @@ footer{
         padding: var(--spacing-8) var(--spacing-24);
     }
     
-    .navbar-header{
-        min-width: 300px;        
+    .navbar-header{        
         padding: var(--spacing-8);
+        gap: var(--spacing-20);
     }
     
     .navbar-logo{
@@ -401,7 +401,6 @@ footer{
 
     .hero-content{
         align-items: center;
-        min-width: 50px;
         padding: var(--spacing-8);
     }
 
@@ -584,6 +583,30 @@ footer{
 
     /* Footer style end*/
     
+}
+
+@media screen and (max-width:400px){
+
+    header{
+        padding: var(--spacing-8) var(--spacing-12);
+    }
+
+    .hero{
+        padding: 8rem;
+    }
+
+    .collection{
+        padding: 0 var(--spacing-20);
+    }
+
+    .collection:first-child .collection-image{
+        margin-left: -2rem;
+    }
+    
+
+    .slider{
+        padding: var(--spacing-24) var(--spacing-12);
+    }
 }
 
 /* Phone and Tablet end */
