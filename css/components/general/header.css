@@ -1,0 +1,143 @@
+/* Header style */
+
+header{
+    background-color: var(--dark-background-solid);
+    
+}
+
+.navbar-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: var(--spacing-28) var(--spacing-128);
+}
+
+.navbar-logo{
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar-link{
+    font-size:var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.with-icon{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: var(--dark-background-solid);
+    z-index: 3;
+}
+
+.submenu-item{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+}
+
+.submenu-item:hover{
+    background-color: var(--primary-900);
+    transition: background .3s ease-in-out;
+}
+
+.navbar-link:hover{
+    background-color: var(--primary-900);
+}
+
+.navbar-bars{
+    display: none;
+}
+
+/* Header style end*/
+
+/*---------------*/
+/*  Responsive  */
+/*--------------*/
+
+/* Phone and Tablet */
+
+@media screen and (max-width:1000px) {
+
+    /* Header style */
+
+    header{
+        background-color: var(--dark-background-solid);
+        padding: var(--spacing-8) var(--spacing-24);
+    }
+    
+    .navbar-header{        
+        padding: var(--spacing-8);
+        gap: var(--spacing-20);
+    }
+    
+    .navbar-logo{
+        max-width: 150px;
+    }
+    
+    .navbar-menu{
+        align-items: center;
+        gap: var(--spacing-20);
+    }
+
+    .login{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .with-submenu{
+        display: none;
+    }
+
+    .navbar-bars{
+        display: unset;
+        font-size: medium;
+    }
+
+    /* Header style end */
+}
+
+@media screen and (max-width:750px) {
+    
+    /* Header style */
+
+    .navbar-header{
+        position: sticky;
+    }
+
+    /* Header style end*/
+}
+
+@media screen and (max-width:400px) {
+    
+    /* Header style */
+    
+    header{
+        padding: var(--spacing-8) var(--spacing-12);
+    }
+
+    /* Header style end */
+}
+
+/* Phone and Tablet end */

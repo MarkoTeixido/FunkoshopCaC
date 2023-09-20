@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
-
 :root{
     /* Color palette */
     --primary-solid: #FF3333;
@@ -47,5 +45,4 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
-
 }

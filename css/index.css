@@ -1,0 +1,32 @@
+/* Resources */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+/* Resources end */
+
+/* Base */
+
+@import url(./base/normalize.css);
+@import url(./base/variables.css);
+@import url(./base/useful.css);
+
+/* Base end */
+
+/* Components - General */
+
+@import url(./components/general/header.css);
+@import url(./components/general/footer.css);
+
+/* Components - General end */
+
+/* Components - Partials */
+
+@import url(./components/partials/);
+
+/* Components - Partials end*/
+
+/* Pages */
+
+@import url(./pages/home.css);
+
+/* Pages end*/
