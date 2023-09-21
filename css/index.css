@@ -28,5 +28,7 @@
 /* Pages */
 
 @import url(./pages/home.css);
+@import url(./pages/item.css);
+@import url(./pages/edit.css);
 
 /* Pages end*/
