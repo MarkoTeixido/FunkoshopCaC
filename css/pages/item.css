@@ -246,6 +246,7 @@ input[type=button]:hover, input[type=submit]:hover{
 
     .products{
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         padding: 0 var(--spacing-36);
@@ -284,6 +285,13 @@ input[type=button]:hover, input[type=submit]:hover{
         padding-bottom: var(--spacing-20);
         text-align: center;
     }
+
+    .centrar {
+        width: 65%;
+        margin: auto;
+        display: block;
+    }
+    
     
     input[type=button], input[type=submit] {
         display:block;
