@@ -1,0 +1,73 @@
+/*Jose edit*/
+.main-edit {
+  max-width: 1400px;
+  padding: var(--spacing-36) var(--spacing-128) var(--spacing-36);
+}
+
+.h1-edit {
+  font-size: var(--font-jumbo);
+  margin-bottom: var(--spacing-36);
+}
+.p-carga {
+  font-size: var(--font-medium);
+}
+.edit-tipo {
+  display: flex;
+  font-size: var(--font-medium);
+  margin-top: var(--spacing-36);
+  margin-bottom: var(--spacing-36);
+}
+
+.edit-valu {
+  margin-left: var(--spacing-8);
+  margin-right: var(--spacing-36);
+  font-size: var(--font-xsmal);
+  border-radius: 5px;
+}
+
+.edit-product {
+  margin-left: var(--spacing-8);
+  margin-right: var(--spacing-36);
+  font-size: var(--font-xsmal);
+  border-radius: 5px;
+}
+
+.edit-text {
+  font-size: var(--font-large);
+  border-radius: 5px;
+}
+
+.edit-sps {
+  font-size: var(--font-xsmal);
+  margin-right: var(--spacing-8);
+  border-radius: 5px;
+}
+
+.edit-dc {
+  margin-left: var(--spacing-8);
+  margin-right: var(--spacing-36);
+  font-size: var(--font-xsmal);
+  border-radius: 5px;
+}
+
+.container-edit {
+  display: flex;
+  text-align: center;
+}
+
+.button-mod {
+  background-color: #ff3333;
+  color: var(--light-font-solid);
+  font-size: var(--font-small);
+  padding: var(--spacing-12) var(--spacing-8);
+  margin-top: var(--spacing-36);
+  font-weight: 400;
+  border: 0;
+}
+
+.button-mod:hover {
+  background-color: var(--dark-background-solid);
+  transition: background 0.2s ease-in-out;
+}
+
+/*jose edit*/
