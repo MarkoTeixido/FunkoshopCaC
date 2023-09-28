@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
         crossorigin="anonymous" 
@@ -19,7 +19,7 @@
             </div>
             <div class="navbar-logo">
                 <a href="./index.html">
-                    <img src="./images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+                    <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
                 </a>
             </div>
             <ul class="navbar-menu">
@@ -47,7 +47,7 @@
                 </li>
                 <li class="navbar-item cart">
                     <a class="navbar-item-cart" href="./pages/carrito.html">
-                        <img src="./images/icons/cart-icon.svg" alt="Icono de carrito">
+                        <img src="../images/icons/cart-icon.svg" alt="Icono de carrito">
                     </a>
                 </li>
             </ul>
@@ -151,24 +151,28 @@
     </main>
     <!--Main content section end-->
 
+    <!--Footer section-->
     <footer>
-        <div>
-            <div>
-                <ul>
-                    <li><a href="../pages/shop.html">SHOP</a></li>
-                    <li><a href="../pages/login.html">INGRESAR</a></li>
-                    <!--Luego realizar la página de contacto-->
-                    <li><a href="./index.html">CONTACTO</a></li>
-                    <!--Luego realizar la página de contacto-->
-                </ul>
-            </div>
-            <picture>
+        <nav class="navbar-footer container">
+            <ul class="footer-navbar-menu">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/login.html">INGRESAR</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./index.html">CONTACTO</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+            </ul>
+            <picture class="footer-img">
                 <img src="../images/branding/isotype.svg" alt="Isotipo de Funkoshop">
             </picture>
-        </div>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        </nav>
+        <p class="footer-copyright">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Footer section end-->
-
 </body>
 </html>
