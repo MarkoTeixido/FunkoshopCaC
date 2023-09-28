@@ -8,6 +8,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="../images/branding/isotype.svg">
     <title>Shop | Funkoshop</title>
 </head>
 <body>
@@ -56,7 +57,7 @@
     <!--Header section with NavBar end-->
 
     <!--Main content section-->
-    <main>
+    <main class="container">
         <!--Search-Sidebar section-->
         <aside>
             <section>
@@ -92,19 +93,23 @@
         <!--Search-Sidebar section end-->
 
         <!--Show cards with pagination-->
-        <div>
-            <div>
+        <div class="slider-articles container">
+            <div class="slider-items">
                 <!--FunkoPop card-->
-                <article>
-                    <picture>
-                        <img src="../images/star-wars/trooper-1.webp" alt="Figura coleccionable funko - Stormtrooper">
-                    </picture>
-                    <div>
-                        <p>STAR WARS</p>
-                        <h4>STORMTROOPER LIGHTSABER</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
+                <article class="card">
+                    <a class="card-link" href="#">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/star-wars/trooper-1.webp" alt="Figura coleecionable funko - Stormtrooper">
+                            <img class="card-image__back" src="../images/star-wars/trooper-box.webp" alt="Figura coleecionable funko - Stormtrooper Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">STAR WARS</p>
+                            <h4 class="card-content-name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
                 </article>
 
                 <!--FunkoPop card-->    
