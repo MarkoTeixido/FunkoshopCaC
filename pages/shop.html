@@ -13,25 +13,43 @@
 <body>
     <!--Header section with NavBar-->
     <header>
-        <nav>
-            <div>
-                <a href="../index.html">
-                    <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+        <nav class="navbar-header container">
+            <div class="navbar-bars">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+            <div class="navbar-logo">
+                <a href="./index.html">
+                    <img src="./images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
                 </a>
             </div>
-            <ul>
-                <li><a href="../pages/shop.html">SHOP</a>
-                    <ul>
-                        <li><a href="/">ALGO 1</a></li>
-                        <li><a href="/">ALGO 2</a></li>
-                        <li><a href="/">ALGO 3</a></li>
+            <ul class="navbar-menu">
+                <li class="navbar-item with-submenu">
+                    <a class="navbar-link with-icon" href="./pages/shop.html">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="#">Funkos</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Ropa</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">Accesorios</a>
+                        </li>
                     </ul>
                 </li>
                 <!--Luego realizar la página de contacto-->
-                <li><a href="../index.html">CONTACTO</a></li>
+                <li class="navbar-item contact">
+                    <a class="navbar-link" href="./index.html">CONTACTO</a>
+                </li>
                 <!--Luego realizar la página de contacto-->
-                <li><a href="../pages/login.html">LOGIN</a></li>
-                <li><a href="../pages/carrito.html"><img src="../images/icons/cart-icon.svg" alt="Icono de carrito"></a></li>
+                <li class="navbar-item login">
+                    <a class="navbar-link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar-item cart">
+                    <a class="navbar-item-cart" href="./pages/carrito.html">
+                        <img src="./images/icons/cart-icon.svg" alt="Icono de carrito">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
