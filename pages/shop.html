@@ -19,13 +19,13 @@
                 <i class="fa-solid fa-bars fa-2xl"></i>
             </div>
             <div class="navbar-logo">
-                <a href="./index.html">
+                <a href="../index.html">
                     <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
                 </a>
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-item with-submenu">
-                    <a class="navbar-link with-icon" href="./pages/shop.html">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                    <a class="navbar-link with-icon" href="./shop.html">SHOP<i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="submenu">
                         <li class="submenu-item">
                             <a href="#">Funkos</a>
@@ -57,44 +57,60 @@
     <!--Header section with NavBar end-->
 
     <!--Main content section-->
-    <main class="container">
+    <main class="main-content container">
         <!--Search-Sidebar section-->
         <aside>
-            <section>
-                <label for="search">BUSCAR</label>
-                <input type="text" name="buscar" placeholder="item o categoria">
-                <label for="order by">ORDENAR POR</label>
-                <select name="ordenar-por">
-                    <option value="price-ascending" selected>Mayor a menor</option>
-                    <option value="price-descending">Menor a mayor</option>
-                    <option value="alpha-ascending">A-Z</option>
-                    <option value="alpha-descending">Z-A</option>
-                </select>
-                <label for="price">PRECIO</label>
-                <form method="post">
-                    <span>MIN</span>
-                    <input type="number" placeholder="0" min="0">
-                    <span>- MAX</span>
-                    <input type="number" placeholder="0" min="100">
-                </form>
-                <label for="filter">FILTRAR</label>
-                <form method="post">
-                    <input type="checkbox">
-                    <label for="new">NUEVOS</label>
-                    <input type="checkbox">
-                    <label for="offers">OFERTAS</label>
-                    <input type="checkbox">
-                    <label for="special-edition">EDICIÓN ESPECIAL</label>
-                    <input type="checkbox">
-                    <label for="favorites">FAVORITOS</label>
-                </form>
+            <section class="filters-wrapper">
+                <div class="filter">
+                    <label class="filter-title" for="search">BUSCAR</label>
+                    <input class="filter-input-primary" type="text" name="buscar" placeholder="item o categoria">
+                </div>
+                <div class="filter">
+                    <label class="filter-title" for="order by">ORDENAR POR</label>
+                    <select class="filter-input-primary" name="ordenar-por">
+                        <option value="price-ascending" selected>Mayor a menor</option>
+                        <option value="price-descending">Menor a mayor</option>
+                        <option value="alpha-ascending">A-Z</option>
+                        <option value="alpha-descending">Z-A</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label class="filter-title" for="price">PRECIO</label>
+                    <form method="post">
+                        <span class="filter-option-title">MIN</span>
+                        <input class="filter-input-secondary" type="number" placeholder="0" min="0">
+                        <span class="filter-option-title">- MAX</span>
+                        <input class="filter-input-secondary" type="number" placeholder="0" min="100">
+                    </form>
+                </div>
+                <div class="filter">
+                    <label class="filter-title" for="filter">FILTRAR</label>
+                    <form class="filter-toggle-container" method="post">
+                        <div class="filter-toggle">
+                            <input class="check" type="checkbox">
+                            <label class="filter-option-title" for="new">NUEVOS</label>
+                        </div>
+                        <div class="filter-toggle">
+                            <input class="check" type="checkbox">
+                            <label class="filter-option-title" for="offers">OFERTAS</label>
+                        </div>
+                        <div class="filter-toggle">
+                            <input class="check" type="checkbox">
+                            <label class="filter-option-title" for="special-edition">EDICIÓN ESPECIAL</label>
+                        </div>
+                        <div class="filter-toggle">
+                            <input class="check" type="checkbox">
+                            <label class="filter-option-title" for="favorites">FAVORITOS</label>
+                        </div>
+                    </form>
+                </div>
             </section>
         </aside>
         <!--Search-Sidebar section end-->
 
         <!--Show cards with pagination-->
-        <div class="slider-articles container">
-            <div class="slider-items">
+        <div class="item-list-wrapper container">
+            <section class="item-list">
                 <!--FunkoPop card-->
                 <article class="card">
                     <a class="card-link" href="#">
@@ -113,41 +129,152 @@
                 </article>
 
                 <!--FunkoPop card-->    
-                <article>
-                    <picture>
-                        <img src="../images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
-                    </picture>
-                    <div>
-                        <p>POKEMON</p>
-                        <h4>PIDGEOTTO</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
+                            <img class="card-image__back" src="../images/pokemon/pidgeotto-box.webp" alt="Figura coleecionable funko - Pidgeotto Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">POKEMON</p>
+                            <h4 class="card-content-name">PIDGEOTTO</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
                 </article>
 
                 <!--FunkoPop card-->
-                <article>
-                    <picture>
-                        <img src="../images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
-                    </picture>
-                    <div>
-                        <p>HARRY POTTER</p>
-                        <h4>LUNA LOVEGOOD LION MASK</h4>
-                        <p>&#36; 1799,99</p>
-                        <span style="color:blue">3 CUOTAS SIN INTERÉS</span>
-                    </div>
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
+                            <img class="card-image__back" src="../images/harry-potter/luna-box.webp" alt="Figura coleecionable funko - Luna Lovegood Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">HARRY POTTER</p>
+                            <h4 class="card-content-name">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
                 </article>
+
+                <!--FunkoPop card-->
+                <article class="card">
+                    <a class="card-link" href="#">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/star-wars/trooper-1.webp" alt="Figura coleecionable funko - Stormtrooper">
+                            <img class="card-image__back" src="../images/star-wars/trooper-box.webp" alt="Figura coleecionable funko - Stormtrooper Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">STAR WARS</p>
+                            <h4 class="card-content-name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!--FunkoPop card-->    
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
+                            <img class="card-image__back" src="../images/pokemon/pidgeotto-box.webp" alt="Figura coleecionable funko - Pidgeotto Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">POKEMON</p>
+                            <h4 class="card-content-name">PIDGEOTTO</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!--FunkoPop card-->
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
+                            <img class="card-image__back" src="../images/harry-potter/luna-box.webp" alt="Figura coleecionable funko - Luna Lovegood Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">HARRY POTTER</p>
+                            <h4 class="card-content-name">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!--FunkoPop card-->
+                <article class="card">
+                    <a class="card-link" href="#">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/star-wars/trooper-1.webp" alt="Figura coleecionable funko - Stormtrooper">
+                            <img class="card-image__back" src="../images/star-wars/trooper-box.webp" alt="Figura coleecionable funko - Stormtrooper Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">STAR WARS</p>
+                            <h4 class="card-content-name">STORMTROOPER LIGHTSABER</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!--FunkoPop card-->    
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/pokemon/pidgeotto-1.webp" alt="Figura coleccionable funko - Pidgeotto">
+                            <img class="card-image__back" src="../images/pokemon/pidgeotto-box.webp" alt="Figura coleecionable funko - Pidgeotto Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">POKEMON</p>
+                            <h4 class="card-content-name">PIDGEOTTO</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!--FunkoPop card-->
+                <article class="card">
+                    <a class="card-link" href="./pages/item.html">
+                        <figure class="card-image">
+                            <span class="card-image-tag">NUEVO</span>
+                            <img class="card-image__front" src="../images/harry-potter/luna-1.webp" alt="Figura coleccionable funko - Luna Lovegood">
+                            <img class="card-image__back" src="../images/harry-potter/luna-box.webp" alt="Figura coleecionable funko - Luna Lovegood Box">
+                        </figure>
+                        <div class="card-content">
+                            <p class="card-content-category">HARRY POTTER</p>
+                            <h4 class="card-content-name">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="card-content-price">&#36; 1799,99</p>
+                            <p class="card-content-prom">3 CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+            </section>
             
             <!--Pagination-->
-            <section>
-                <ul>
-                    <li><a href="/"><i class="fa-solid fa-angle-left"></i></a></li>
-                    <li><a href="/" class="active">1</a></li>
-                    <li><a href="/">2</a></li>
-                    <li><a href="/">...</a></li>
-                    <li><a href="/">9</a></li>
-                    <li><a href="/">10</a></li>
-                    <li><a href="/"><i class="fa-solid fa-angle-right"></i></a></li>
+            <section class="pagination">
+                <ul class="pagination-list">
+                    <li class="pagination-item chevron"><a href="/"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li class="pagination-item"><a href="/" class="active">1</a></li>
+                    <li class="pagination-item"><a href="/">2</a></li>
+                    <li class="pagination-item"><a href="/">...</a></li>
+                    <li class="pagination-item"><a href="/">9</a></li>
+                    <li class="pagination-item"><a href="/">10</a></li>
+                    <li class="pagination-item chevron"><a href="/"><i class="fa-solid fa-angle-right"></i></a></li>
                 </ul>
             </section>
             <!--Pagination end-->
@@ -161,7 +288,7 @@
         <nav class="navbar-footer container">
             <ul class="footer-navbar-menu">
                 <li class="navbar-item">
-                    <a class="navbar-link" href="./pages/shop.html">SHOP</a>
+                    <a class="navbar-link" href="./shop.html">SHOP</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link" href="./pages/login.html">INGRESAR</a>

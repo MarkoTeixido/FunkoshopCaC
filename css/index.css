@@ -21,7 +21,8 @@
 
 /* Components - Partials */
 
-@import url(./components/partials/);
+@import url(./components/partials/slider.css);
+@import url(./components/partials/card.css);
 
 /* Components - Partials end*/
 
