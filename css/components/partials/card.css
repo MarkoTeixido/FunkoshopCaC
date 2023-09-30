@@ -60,6 +60,12 @@
 
 /* Card style end */
 
+/*---------------*/
+/*  Responsive  */
+/*--------------*/
+
+/* Phone and Tablet */
+
 @media screen and (max-width:1000px){
 
     /* Card style */
@@ -90,3 +96,5 @@
 
     /* Card style end */
 }
+
+/* Phone and Tablet end */

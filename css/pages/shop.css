@@ -42,6 +42,7 @@
 .filter-toggle-container{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .filter-toggle{
@@ -50,9 +51,18 @@
     gap: 0.4rem;
 }
 
+.filter-checkbox{
+    accent-color: var(--primary-solid);
+    width: 3rem;
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
 .filter-option-title{
     font-size: var(--font-xsmall);
     font-weight: 500;
+    align-self: center;
 }
 
 /* Aside filter Style end */
@@ -60,7 +70,6 @@
 /* Items List Style */
 
 .item-list-wrapper{
-    max-width: 90%;
     margin: auto 0;
     display: flex;
     flex-direction: column;
@@ -112,3 +121,32 @@
 }
 
 /* Pagination Style end */
+
+/*---------------*/
+/*  Responsive  */
+/*--------------*/
+
+/* Phone and Tablet */
+
+@media screen and (max-width:1170px){
+    .main-content{
+        flex-direction: column;
+        padding: var(--spacing-28) var(--spacing-36);
+        gap: var(--spacing-28);
+    }
+
+    .item-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width:750px){
+
+}
+
+@media screen and (max-width:400px){
+
+}
+
+/* Phone and Tablet end*/
