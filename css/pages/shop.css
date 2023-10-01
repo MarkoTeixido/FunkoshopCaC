@@ -59,10 +59,18 @@
     border: 2px solid #000;
 }
 
+.filter-checkbox:checked ~ .filter-option-title{
+    color: var(--primary-solid);
+}
+
 .filter-option-title{
     font-size: var(--font-xsmall);
     font-weight: 500;
     align-self: center;
+}
+
+.filters-responsive{
+    display: none;
 }
 
 /* Aside filter Style end */
@@ -139,10 +147,71 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    .search-section .filter-title, .order-section .filter-title{
+        display: none;
+    }
+
+    .order-section{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .order-section div{
+        width: 50%;
+    }
+
+    .filters-responsive{
+        display:inline-block ;
+        padding: var(--spacing-28) var(--spacing-68);
+        text-align: center;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+    .filter-order-responsive{
+       
+    }
+
+    select{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: var(--font-small);
+    }
+
+    select option{
+        text-align: center;
+    }
+
+    .filter-button{
+        display:contents;
+        font-size: var(--font-small);
+        width: 100%;
+        height: 100%;
+    }
+
+    .filter-button i{
+        display: contents;
+        align-self: center;
+    }
+
+    .price-section{
+        display: none;
+    }
+
+    .checkbox-section{
+        display: none;
+    }
+
 }
 
-@media screen and (max-width:750px){
-
+@media screen and (max-width:830px){
+    .item-list{
+        grid-template-columns: repeat(1, 1fr);
+        padding: var(--spacing-24) var(--spacing-128);
+    }
 }
 
 @media screen and (max-width:400px){
