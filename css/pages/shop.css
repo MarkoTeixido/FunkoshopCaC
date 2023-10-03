@@ -1,8 +1,10 @@
+/* Base */
 .main-content{
     display: flex;
     padding: var(--spacing-68) var(--spacing-128);
     gap: var(--spacing-12);
 }
+/* Base end */
 
 /* Aside filter Style */
 
@@ -90,6 +92,11 @@
     gap: var(--spacing-24);
 }
 
+.card:hover{
+    background-color: rgba(31, 31, 31, 0.05);
+    transition: background .3s ease-in-out;
+}
+
 /* Items List Style end */
 
 /* Pagination Style */
@@ -137,23 +144,27 @@
 /* Phone and Tablet */
 
 @media screen and (max-width:1200px){
+
+    /* Items List Style */
+
     .item-list{
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-16);
     }
+
+    /* Items List Style end */
 }
 
 @media screen and (max-width:1100px){
+    /* Base */
     .main-content{
         flex-direction: column;
         padding-top: var(--spacing-28);
         gap: var(--spacing-28);
     }
+    /* Base end */
 
-    .item-list{
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-12);
-    }
+    /* Aside filter Style */
 
     .search-section .filter-title, .order-section .filter-title{
         display: none;
@@ -208,47 +219,76 @@
         display: none;
     }
 
-
-    .card{
-        max-width: 100%;
-    }    
-}
-
-@media screen and (max-width:1000px){
+    /* Aside filter Style end */
     
-    .main-content{
-        padding: var(--spacing-28);
-    }
+    /* Items List Style */
 
     .item-list{
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-12);
     }
+
+    .card{
+        max-width: 100%;
+    }
+
+    /* Items List Style end */
+}
+
+@media screen and (max-width:1000px){
+    /* Base */
+    .main-content{
+        padding: var(--spacing-28);
+    }
+    /* Base end */
+
+    /* Item List Style */
+    
+    .item-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Item List Style end */
 }
 
 @media screen and (max-width:830px){
     
+    /* Item List Style */
+
     .item-list{
         align-self: center;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         padding: var(--spacing-24) var(--spacing-128);
     }
+    
+    /* Item List Style end*/
 
 }
 
 @media screen and (max-width:600px){
-    
+    /* Base */
     .main-content{
         padding: var(--spacing-24) var(--spacing-8);
     }
+    /* Base end */
+
+    /* Item List Style */
+
     .item-list{
         align-self: center;
         justify-content: center;
     }
 
+    /* Item List Style end */
+
+    /* Pagination Style */
+    
     .pagination-mid{
         display: none;
     }
+
+    /* Pagination Style end */
 }
 
 /* Phone and Tablet end*/
