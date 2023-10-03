@@ -30,5 +30,7 @@
 @import url(./pages/home.css);
 @import url(./pages/item.css);
 @import url(./pages/edit.css);
+@import url(./pages/create.css);
+@import url(./pages/register.css);
 
 /* Pages end*/
