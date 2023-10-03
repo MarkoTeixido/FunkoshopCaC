@@ -1,0 +1,21 @@
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navbar-menu {
+    display: flex;
+}
+
+.section-register__person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formRegister {
+    display: flex;
+    flex-direction: column;
+}
