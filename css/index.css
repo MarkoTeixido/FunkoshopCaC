@@ -21,13 +21,15 @@
 
 /* Components - Partials */
 
-@import url(./components/partials/);
+@import url(./components/partials/slider.css);
+@import url(./components/partials/card.css);
 
 /* Components - Partials end*/
 
 /* Pages */
 
 @import url(./pages/home.css);
+@import url(./pages/shop.css);
 @import url(./pages/item.css);
 @import url(./pages/edit.css);
 @import url(./pages/create.css);
