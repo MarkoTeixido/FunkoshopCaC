@@ -39,21 +39,26 @@
 
     <!--Main content section-->
     <main class="main-admin">
-      <div class="buscador-admin" >
-      <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-      <input
-        type="text"
-        name="buscar"
-        placeholder="código, nombre o categoria"
-      />
-    </div>
       <section>
-        <div class="lista">
-          <h1>LISTADO DE PRODUCTOS</h1>
-          <label for="add">AGREGAR</label>
-          <button><i class="fa-solid fa-plus"></i></button>
+        
+          <label class="icono-search" for="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input
+            type="text"
+            name="buscar"
+            placeholder="código, nombre o categoria"
+          />
+        
+        <div class="lista-productos">
+          <h2>LISTADO DE PRODUCTOS</h2>
+          <button class="lista-boton">
+            AGREGAR<img
+              src="/images/icons/bxs-plus-square.svg"
+              alt="icono de sumar"
+            />
+          </button>
         </div>
-
         <div>
           <table>
             <thead>
