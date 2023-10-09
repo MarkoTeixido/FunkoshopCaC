@@ -7,6 +7,12 @@
   align-content: space-around;
 }
 
+.div-search {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin: 10px 230px 20px;
+}
 
 .lista-productos {
   display: flex;
@@ -22,4 +28,14 @@
   justify-content: space-between;
   background-color: white;
   border-style: none;
+}
+
+.tabla-de-productos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+ font-size: 18px;
+ margin-left: 230px;
+ 
 }
