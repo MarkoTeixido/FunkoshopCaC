@@ -8,8 +8,7 @@
   display: flex;
   justify-content: center;
 }
-
-h1 {
+.login-titulo {
   font-size: 30px;
   margin: 40px;
   letter-spacing: 4px;
@@ -22,9 +21,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-
 }
-
 
 .ingresar,
 .forget {
@@ -34,7 +31,6 @@ h1 {
 }
 
 .forget {
- font-size: 11px;
-    color: blue;
+  font-size: 11px;
+  color: blue;
 }
-

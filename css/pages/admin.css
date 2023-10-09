@@ -1,18 +1,25 @@
 .main-admin {
   width: 100%;
-  height: 100vh;
+  min-height: 300vh;
   padding: 15px 0px;
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   align-content: space-around;
 }
 
-.buscador-admin {
+
+.lista-productos {
   display: flex;
-   margin: 10px 140px 5px 100px;
-   font-size: 18px;
+  justify-content: space-around;
+  font-size: 18px;
 }
 
-.lista {
-    
+.lista-boton {
+  width: 80px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-style: none;
 }
