@@ -8,8 +8,10 @@ body {
     margin-left: auto;
 }
 .container-resumen {
+    display: grid;
     width: 50%;
     height: 50%;
+    margin: 20px;
     padding: 50px;
     margin-left: auto;
 }
@@ -134,17 +136,35 @@ body {
     padding: var(--spacing-24) var(--spacing-128);
 }
 
-.slider-title{
+.title-carrito {
     font-family: var(--secondary-font);
     font-size: 46px;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: start;
     border-bottom: 3px solid var(--primary-solid);
     height: auto;
-    text-align: start;
 }
-.button {
-    text-decoration: none;
+
+.title-resumen {
+    width: 50%;
+    justify-self: end;
+    font-family: var(--secondary-font);
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: end;
+    border-bottom: 3px solid var(--primary-solid);
+
+}
+
+.button-pagar {
+    width: 100%;
+    border: none;
+}
+
+.total {
+    border-top: 3px solid red;
 }
 
 .slider-buttons{
@@ -171,8 +191,18 @@ body {
 }
 
 .container-carrito {
-    display: block;
+    display: grid;
+    align-items: center;
+    padding: 100px 50px 50px 100px;
+    margin: 50px;
 }
+
+/* .tr1 {
+    background-color:aquamarine;
+    border: solid red;
+    border-radius: 25px;
+} */
+
 .table-carrito {
     background-color: #FAFAFF;
     display: table;
@@ -181,7 +211,7 @@ body {
     border: 1px solid #FAFAFF;
     caption-side: bottom;
     border-radius: 10px;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     text-indent: initial;
     border-spacing: 2px;
     margin: 50px;
@@ -191,8 +221,10 @@ body {
     vertical-align: middle;
     border-color: inherit;
 }
-.tr {
+.tr1 {
     display: table-row;
+    border: solid 1px black;
+
 }
 th, td, img-carrito {
     width: 25%;
@@ -200,7 +232,7 @@ th, td, img-carrito {
     vertical-align: middle;
     border-collapse: collapse;
     padding: 1em;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 /* .td {
@@ -366,9 +398,11 @@ th, td, img-carrito {
         padding: var(--spacing-24) var(--spacing-24);
     }
 
-    .slider-title{
+    .carrito-title{
         font-size: var(--font-jumbo);
         text-align: center;
+        border-bottom: 3px solid var(--primary-solid);
+
     }
 
     .slider-articles{

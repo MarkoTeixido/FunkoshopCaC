@@ -60,7 +60,7 @@
     <!--Carrito content section-->
   <body>
     <div class="container-carrito">
-        <div class="slider-title">Carrito de compras</div>
+        <div class="title-carrito">Carrito de compras</div>
           <table class="table-carrito">
             <thead class="thread">
               <tr>
@@ -72,7 +72,7 @@
               </tr>
             </thead>
 
-            <tbody>
+            <tbody class="body">
               <tr class="tr1">
                 <td class="td">
                   <!-- <span onclick="habilitarTodos(1)" class="m-1">
@@ -95,7 +95,7 @@
                 </td>
                 <td>
                   <div>
-                    <form class="addcarrito" method="post">
+                    <form class="cantidad" method="post">
                       <input class="quantity" type="number" min="0" max="5" step="1" placeholder="0">
                   </form>
                   </div>
@@ -113,9 +113,6 @@
               </tr>
               <tr class="tr2">
                 <td class="td">
-                  <!-- <span onclick="habilitarTodos(1)" class="m-1">
-                      <i class="fa-regular fa-pen-to-square"></i>
-                  </span> -->
                   <div class="img-carrito">
                     <img src="../images/pokemon/pidgeotto-1.webp" alt="pidgeotto-1" alt="baby-yoda-1" />
                   </div>
@@ -155,29 +152,57 @@
 
     
     <!--Carrito content section end-->
-
     <!--Resumen content section-->
+
     <div class="container-resumen">
-        <div class="slider-title">Resumen</div>
-        <div class="carrito-resumen">
-          <div class="resumen-elementos">
-            <p>CANTIDAD DE ELEMENTOS</p>
-            <p>3</p>
-          </div>
-          <div class="resumen-subtotal">
-            <p>SUBTOTAL</p>
-            <p>$5399,97</p>
-          </div>
-          <div class="resumen-envio">
-            <p>ENVIO</p>
-            <p>$0,00</p>
-          </div>
-          <div class="total">
-            <h4>TOTAL</h4>
-            <p>$5399,97</p>
-          </div>
-        </div>
-        <input type="button" name="IR A CARRITO" value="Agregar a Carrito" onclick="location.href='javascript:titulos()'" />
+      <div class="title-resumen">Resumen</div>
+        <table class="table-carrito">
+          <thead class="thread">
+            <tr>
+              <th class="th"></th>
+              <th class="th"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="td">
+                <P>CANTIDAD DE ELEMENTOS:</P>
+              </td>
+              <td>
+                <P>3</P>
+              </td>
+            </tr>
+            <tr>
+              <td class="td">
+                <P>SUBTOTAL:</P>
+              </td>
+              <td>
+                <P>$ 5.399,97</P>
+              </td>
+            </tr>
+            <tr>
+              <td class="td">
+                <P>ENVÍO:</P>
+              </td>
+              <td>
+                <P>$ 0,0</P>
+              </td>
+            </tr>
+            <tr class="total">
+              <td class="td">
+                <P>TOTAL:</P>
+              </td>
+              <td>
+                <P>$ 5.399,97</P>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="button-pagar">
+        <input type="button" name="IR A CARRITO" value="IR A PAGAR" onclick="location.href='javascript:titulos()'" />
+      </button>
+      </div>
     </div>
 
 
