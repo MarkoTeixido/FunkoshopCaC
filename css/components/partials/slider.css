@@ -7,25 +7,6 @@
     padding: var(--spacing-24) var(--spacing-128);
 }
 
-.slider-title{
-    font-family: var(--secondary-font);
-    font-size: var(--font-display);
-    text-transform: uppercase;
-}
-
-.slider-buttons{
-    align-self: center;
-    align-items: center;
-    max-width: 180px;
-    max-height: 180px;
-    color: rgb(152, 146, 146);
-    border: 1px solid rgb(152, 146, 146);
-    font-size: var(--font-medium);
-    background-color: rgb(255, 255, 255);
-    margin-bottom: var(--spacing-8);
-    font-weight: 100;
-}
-
 .slider-articles{
     display: flex;
     gap: var(--spacing-24);
