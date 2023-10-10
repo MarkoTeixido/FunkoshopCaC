@@ -14,7 +14,7 @@
     display: inline-block;
     font-family: var(--secondary-font);
     font-size: var(--font-display);
-    font-weight: 500;
+    font-weight: 600;
     border-bottom: 5px solid var(--primary-solid);
 }
 
@@ -92,6 +92,7 @@
 
 .cart-item-input input{
     border: 1px solid #C9C9C9;
+    width: 7rem;
 }
 
 .cart-item-input-buttons{
@@ -100,7 +101,17 @@
     gap: 0.5rem;
 }
 
+.cart-item-input-buttons button{
+    background-color: var(--primary-solid);
+    color: #ffffff;
+    border: none;
+    width: 1.8rem;
+    font-weight: 700;
+}
 
+.cart-item-input-buttons button:hover{
+    background-color: rgba(230, 0, 0, 0.801);
+}
 
 .cart-item-selected p{
     font-size: var(--font-small);
@@ -138,6 +149,7 @@
     margin: var(--spacing-16) 0;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
+    background-color: #FAFAFF;
 }
 
 .cart-resume-radius-top{
@@ -146,15 +158,43 @@
 
 .cart-resume-radius-bottom{
     border-radius: 0 0 10px 10px;
+
 }
 
 .cart-resume-item{
-    padding: var(--spacing-16);
+    margin: var(--spacing-28);
+    padding: 0;
     display: flex;
     justify-content: space-between;
     background-color: #FAFAFF;
 }
 
+.cart-resume-item p{
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+}
+
+.cart-resume-item p:nth-child(2){
+    color: #747474;
+}
+
 .cart-resume-item.divider{
     border-bottom: 2px solid var(--primary-solid);
+    margin: 0 var(--spacing-28) 0;
+    padding-bottom: var(--spacing-16);
+}
+
+.cart-resume-pay-button{
+    font-family: var(--secondary-font);
+    font-size: var(--font-large);
+    font-weight: 700;
+    padding: var(--spacing-12) 0;
+    background-color: var(--primary-solid);
+    color: #ffffff;
+    border: none;
+}
+
+.cart-resume-pay-button:hover{
+    background-color: rgba(230, 0, 0, 0.801);
+    transition: background .2s ease-in-out;
 }
