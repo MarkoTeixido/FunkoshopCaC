@@ -1,0 +1,41 @@
+.main-admin {
+  width: 100%;
+  min-height: 120vh;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.div-search {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin: 10px 230px 20px;
+}
+
+.lista-productos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.lista-boton {
+  width: 80px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-style: none;
+}
+
+.tabla-de-productos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+ font-size: 18px;
+ margin-left: 230px;
+ 
+}

@@ -1,7 +1,36 @@
 .main-login {
-  
+  width: 100%;
+  height: 50vh;
 }
 
-.h1-login {
-  
+.login-box {
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+.login-titulo {
+  font-size: 30px;
+  margin: 40px;
+  letter-spacing: 4px;
+}
+
+.email,
+.contraseña {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.ingresar,
+.forget {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.forget {
+  font-size: 11px;
+  color: blue;
 }
