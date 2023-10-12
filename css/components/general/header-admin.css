@@ -1,0 +1,11 @@
+@media screen and (max-width:1000px){
+    .navbar-menu-admin{
+        display: none;
+    }
+    
+    .navbar-header-admin{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
