@@ -33,28 +33,36 @@
     <main>
         <section id="section-register__person">
             <h2 class="title-section">CREA TU CUENTA</h2>
-            <h3 class="">Completa el formulario para ser parte del mundo de los Funkos</h3>
+            <h3 class="subtitle-section">Completa el formulario para ser parte del mundo de los Funkos</h3>
             <div id="container-form__register">
                 <form action="" method="post" id="formRegister" class="formRegister">
-                    <label for="name">Nombre:</label>
-                    <input name="nombre" id="name" type="text" placeholder="John">
-
-                    <label for="lastName">Apellido:</label>
-                    <input name="apellido" id="lastName" type="text" placeholder="Doe">
-
-                    <label for="email">Email:</label>
-                    <input name="email" id="email" type="email" placeholder="johndoe@correo.com">
-
-                    <label for="password">Contraseña:</label>
-                    <input name="contrasenia" id="password" type="password" placeholder="**********">
-
-                    <label for="repPassword">Repita Contraseña:</label>
-                    <input name="repContrasenia" id="repPassword" type="password" placeholder="**********">
-
-                    <button type="submit">Registrar</button>
-
-                    <input id="termAndCondi" name="termYCondi" type="checkbox">
-                    <label for="termAndCondi">Acepta <a href="">Terminos y Condiciones</a></label>
+                    
+                    <div class="container--labelsAndInputs">
+                        <div class="container--labels">
+                            <label for="name" class="label-register">Nombre:</label>
+                            <label for="lastName" class="label-register">Apellido:</label>
+                            <label for="email" class="label-register">Email:</label>
+                            <label for="password" class="label-register">Contraseña:</label>
+                            <label for="repPassword"  class="label-register">Repita Contraseña:</label>
+                        </div>
+                        <div class="container--inputs">
+                            <input name="nombre" id="name" type="text" placeholder="John" class="input-register">
+                            <input name="apellido" id="lastName" type="text" placeholder="Doe" class="input-register">
+                            <input name="email" id="email" type="email" placeholder="johndoe@correo.com" class="input-register">
+                            <input name="contrasenia" id="password" type="password" placeholder="●●●●●●●●●●" class="input-register">
+                            <input name="repContrasenia" id="repPassword" type="password" placeholder="●●●●●●●●●●" class="input-register">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="container--form__termAndCondi">
+                        
+                        <button type="submit" class="btn-register">Registrar</button>
+                        <div class="termAndCondi--Button">
+                            <input id="termAndCondi" name="termAndCondi" type="checkbox">
+                            <label for="termAndCondi">Acepta <a href="" class="linkToTermAndCondi">Terminos y Condiciones</a></label>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
@@ -67,6 +75,9 @@
             <ul class="footer-navbar-menu">
                 <li class="navbar-item">
                     <a class="navbar-link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../pages/register.html">REGISTRARSE</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link" href="../pages/login.html">INGRESAR</a>
