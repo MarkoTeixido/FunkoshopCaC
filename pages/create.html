@@ -31,59 +31,77 @@
 
     <!--Main content section-->
     <main>
-        <section id="section-register__item">
-            <h2>CREAR NUEVO ITEM</h2>
+        <section id="section-create__item">
+            <h2 class="title-section-create">CREAR NUEVO ITEM</h2>
             <div id="container-form__item">
-                <form action="" method="post" id="formItem">
+                <form action="" method="post" id="formItems">
 
-                    <label for="category">Categoria:</label>
-                    <select id="category" name="categoria">
-                        <option disabled selected>Seleccionar</option>
-                        <option value="starWars">Star Wars</option>
-                        <option value="pokemon">Pokemon</option>
-                        <option value="harryPotter">Harry Potter</option>
-                    </select>
+                    <div>
 
-                    <label for="license">Licencia:</label>
-                    <select id="license" name="licencia">
-                        <option disabled selected>Seleccionar</option>
-                        <option value="licenNarutoShippuden">Naruto Shippuden</option>
-                        <option value="licenPokemon">Pokemon</option>
-                    </select>
+                        <div class="container-form__fields">
+                            <label for="category" class="label-create">Categoria:</label>
+                            <select id="category" name="categoria" class="select-createItem">
+                                <option disabled selected>Seleccionar</option>
+                                <option value="starWars">Star Wars</option>
+                                <option value="pokemon">Pokemon</option>
+                                <option value="harryPotter">Harry Potter</option>
+                            </select>
+    
+                            <label for="license" class="label-create license">Licencia:</label>
+                            <select id="license" name="licencia" class="select-createItem">
+                                <option disabled selected>Seleccionar</option>
+                                <option value="licenNarutoShippuden">Naruto Shippuden</option>
+                                <option value="licenPokemon">Pokemon</option>
+                            </select>
+                        </div>
 
-                    <label for="nameProduct">Nombre del producto:</label>
-                    <input type="text" name="nombreProducto" id="nameProduct"
-                        placeholder="Kakashi Hatake Shippuden Saga">
+                        <div class="container-form__fields">
+                            <label for="nameProduct" class="label-create">Nombre del producto:</label>
+                            <input type="text" name="nombreProducto" id="nameProduct"
+                                placeholder="Kakashi Hatake Shippuden Saga" class="input-create">
+                        </div>
 
-                    <textarea name="descriProduct" id="descriptionProduct"
-                        placeholder="Descripcion del producto"></textarea>
+                        <div class="container-form__fields">
+                            <textarea name="descriProduct" id="descriptionProduct"
+                                placeholder="Descripcion del producto" cols=63 rows=10></textarea>
+                        </div>
 
-                    <label for="sku">SKU:</label>
-                    <input id="sku" name="sku" type="text" placeholder="SSK111AB001">
+                        <div class="container-form__fields">
+                            <label for="sku" class="label-create">SKU:</label>
+                            <input id="sku" name="sku" type="text" placeholder="SSK111AB001" class="input-create">
+    
+                            <label for="price" class="label-create">Precio:</label>
+                            <input id="price" name="precio" type="number" placeholder="$0.000,00" class="input-create">
+    
+                            <label for="stock" class="label-create">Stock:</label>
+                            <input id="stock" name="stock" type="number" placeholder="0" class="input-create">
+                        </div>
 
-                    <label for="price">Precio:</label>
-                    <input id="price" name="precio" type="number" placeholder="$0.000,00">
+                        <div class="container-form__fields">
+                            <label for="discount" class="label-create">Descuento:</label>
+                            <input id="discount" name="descuento" type="number" placeholder="0%" class="input-create">
+    
+                            <label for="cuotas" class="label-create">Cuotas:</label>
+                            <select id="cuotas" name="cuotas" class="select-createItem">
+                                <option selected>3 Cuotas sin interes</option>
+                                <option value="seisCuotas">6 Cuotas sin interes</option>
+                                <option value="doceCuotas">12 Cuotas sin interes</option>
+                                <option value="dieciOchoCuotas">18 Cuotas sin interes</option>
+                                <option value="veintiCuatroCuotas">24 Cuotas sin interes</option>
+                            </select>
+                        </div>
 
-                    <label for="stock">Stock:</label>
-                    <input id="stock" name="stock" type="number" placeholder="0">
+                        <label for="image" class="label-create">Imágenes:</label>
+                        <input type="file" name="image" id="image" accept="image/*" multiple>
 
-                    <label for="discount">Descuento:</label>
-                    <input id="discount" name="descuento" type="number" placeholder="0%">
+                    </div>
 
-                    <label for="cuotas">Cuotas:</label>
-                    <select id="cuotas" name="cuotas">
-                        <option selected>3 Cuotas sin interes</option>
-                        <option value="seisCuotas">6 Cuotas sin interes</option>
-                        <option value="doceCuotas">12 Cuotas sin interes</option>
-                        <option value="dieciOchoCuotas">18 Cuotas sin interes</option>
-                        <option value="veintiCuatroCuotas">24 Cuotas sin interes</option>
-                    </select>
+                    <div class="container-btns">
 
-                    <label for="image">Imágenes:</label>
-                    <input type="file" name="image" id="image" accept="image/*" multiple>
+                        <button type="submit" class="btns-pageCrear">Agregar Producto</button>
 
-                    <button type="submit">Agregar Producto</button>
-                    <button type="reset">Limpiar</button>
+                        <button type="reset" class="btns-pageCrear">Limpiar</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -96,6 +114,9 @@
             <ul class="footer-navbar-menu">
                 <li class="navbar-item">
                     <a class="navbar-link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../pages/register.html">REGISTRARSE</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link" href="./pages/login.html">INGRESAR</a>
