@@ -1,41 +1,95 @@
-.main-admin {
-  width: 100%;
-  min-height: 120vh;
-  padding: 15px 0px;
+.prod-list-wrapper{
+  padding: var(--spacing-36) var(--spacing-128);
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  gap: var(--spacing-24); 
 }
 
-.div-search {
+.prod-list-search-section{
+  width: 50%;
   display: flex;
-  justify-content: flex-start;
-  font-size: 18px;
-  margin: 10px 230px 20px;
+  gap: var(--spacing-16);
+  align-items: center;
 }
 
-.lista-productos {
+.prod-list-search-icon i{
+  font-size: var(--font-large);
+  margin-top: .5rem;
+}
+
+.prod-list-search-section input{
+  width: 100%;
+  padding: var(--spacing-8);
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.prod-list{
+  width: 95%;
   display: flex;
-  justify-content: space-around;
-  font-size: 18px;
+  flex-direction: column;
+  gap: var(--spacing-24);
 }
 
-.lista-boton {
-  width: 80px;
-  align-self: center;
+.prod-list-title-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prod-list-add{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  border-style: none;
+  gap: var(--spacing-16);
 }
 
-.tabla-de-productos {
+.prod-list-add .prod-list-add-label{
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+
+.prod-list-add .prod-list-add-button{
+  padding: var(--spacing-8);
+  background-color: var(--primary-solid);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.prod-list-table {
+  width: 100%;
+  padding: 0 0 0 var(--spacing-20);
+}
+
+.prod-list-table tbody{
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: var(--spacing-24);
+}
+
+.prod-list-row{
+  display: grid;
+  grid-template-columns: 0.15fr 0.3fr 0.5fr 0.4fr 0.2fr;
+}
+
+.prod-list-row .row-item-title{
+  font-size: var(--font-medium);
+  font-weight: 700;
+  text-align: start;
+}
+
+.prod-list-row .row-item-added{
+  font-size: var(--font-medium);
+  font-weight: 500;
+  text-align: start;
+}
+
+.row-item-added-icons{
+  display: flex;
   justify-content: space-between;
-  align-content: space-around;
- font-size: 18px;
- margin-left: 230px;
- 
+  padding: 0 var(--spacing-8);
+}
+
+.row-item-added-icons img{
+  max-width: 3.2rem;
+  max-height: 3.2rem;
 }

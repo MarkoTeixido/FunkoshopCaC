@@ -9,8 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="../images/branding/isotype.svg">
     <title>Admin | Funkoshop</title>
   </head>
   <body>
@@ -18,11 +18,9 @@
     <header>
       <nav class="navbar-header container">
         <div>
-          <a href="../index.html"
-            ><img
-              src="../images/branding/logo_light_horizontal.svg"
-              alt="Isologotipo de Funkoshop"
-          /></a>
+          <a href="../index.html">
+            <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+          </a>
         </div>
         <ul class="header-navbar-menu">
           <li class="navbar-item">
@@ -38,155 +36,190 @@
     <!--Header section with NavBar end-->
 
     <!--Main content section-->
-    <main class="main-admin">
-      <section>
-        <div class="div-search">
-          <label class="icono-search" for="search"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></label>
-          <input
-            type="text"
-            name="buscar"
-            placeholder="código, nombre o categoria"
-          />
+    <main>
+      <section class="prod-list-wrapper container">
+        <div class="prod-list-search-section">
+          <label class="prod-list-search-icon" for="search">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </label>
+          <input type="text" name="buscar" placeholder="código, nombre o categoria"/>
         </div>
-        <div class="lista-productos">
-          <h2>LISTADO DE PRODUCTOS</h2>
-          <button class="lista-boton">
-            AGREGAR<img
-              src="/images/icons/bxs-plus-square.svg"
-              alt="icono de sumar"
-            />
-          </button>
-        </div>
-        <div class="tabla-de-productos">
-          <table>
-            <tr>
-              <th>ID</th>
-              <th>Código</th>
-              <th>Nombre del Producto</th>
-              <th>Categoria</th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>STW001001</td>
-              <td>Baby Yoda Blueball</td>
-              <td>STAR WARS</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>2</td>
-              <td>STW001002</td>
-              <td>Boba Fett Fighter</td>
-              <td>STAR WARS</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>3</td>
-              <td>STW001003</td>
-              <td>Luke Skylwalker & Grogu</td>
-              <td>STAR WARS</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td>STW001004</td>
-              <td>Stormtrooper Lightsaber</td>
-              <td>STAR WARS</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td>PKM001001</td>
-              <td>Charmander Smiley</td>
-              <td>POKEMON</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>6</td>
-              <td>PKM001002</td>
-              <td>Dragonite Hi!</td>
-              <td>POKEMON</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>7</td>
-              <td>PKM001003</td>
-              <td>Pidgeotto Flying</td>
-              <td>POKEMON</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>8</td>
-              <td>PKM001004</td>
-              <td>Pikachu Smiley</td>
-              <td>POKEMON</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>9</td>
-              <td>PKM001005</td>
-              <td>Vulpix Fancy</td>
-              <td>POKEMON</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>10</td>
-              <td>HPT001001</td>
-              <td>Harry Potter & Hegwid</td>
-              <td>HARRY POTTER</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>11</td>
-              <td>HPT001002</td>
-              <td>Herminione Ball Dress</td>
-              <td>HARRY POTTER</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>12</td>
-              <td>HPT001003</td>
-              <td>Luna Lovegood Lion Mask</td>
-              <td>HARRY POTTER</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-            <tr>
-              <td>13</td>
-              <td>HPT001004</td>
-              <td>Snape Patronus</td>
-              <td>HARRY POTTER</td>
-              <td><img src="/images/icons/edit_pencil.svg" alt="lapiz" /></td>
-              <td><img src="/images/icons/delete_trash.svg" alt="basura" /></td>
-            </tr>
-
-          </table>
+        <div class="prod-list">
+          <div class="prod-list-title-section">
+            <h1 class="title">LISTADO DE PRODUCTOS</h1>
+            <div class="prod-list-add">
+              <p class="prod-list-add-label">AGREGAR</p>
+              <button class="prod-list-add-button"><i class="fa-solid fa-plus fa-xl"></i></button>
+            </div>
+          </div>
+          <div class="prod-list-table-container">
+            <table class="prod-list-table">
+              <tbody>
+                <tr class="prod-list-row">
+                  <th class="prod-list-row-item row-item-title">ID</th>
+                  <th class="prod-list-row-item row-item-title">Código</th>
+                  <th class="prod-list-row-item row-item-title">Nombre del Producto</th>
+                  <th class="prod-list-row-item row-item-title">Categoria</th>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">1</td>
+                  <td class="prod-list-row-item row-item-added">STW001001</td>
+                  <td class="prod-list-row-item row-item-added">Baby Yoda Blueball</td>
+                  <td class="prod-list-row-item row-item-added">STAR WARS</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">2</td>
+                  <td class="prod-list-row-item row-item-added">STW001002</td>
+                  <td class="prod-list-row-item row-item-added">Boba Fett Fighter</td>
+                  <td class="prod-list-row-item row-item-added">STAR WARS</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">3</td>
+                  <td class="prod-list-row-item row-item-added">STW001003</td>
+                  <td class="prod-list-row-item row-item-added">Luke Skylwalker & Grogu</td>
+                  <td class="prod-list-row-item row-item-added">STAR WARS</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">4</td>
+                  <td class="prod-list-row-item row-item-added">STW001004</td>
+                  <td class="prod-list-row-item row-item-added">Stormtrooper Lightsaber</td>
+                  <td class="prod-list-row-item row-item-added">STAR WARS</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">5</td>
+                  <td class="prod-list-row-item row-item-added">PKM001001</td>
+                  <td class="prod-list-row-item row-item-added">Charmander Smiley</td>
+                  <td class="prod-list-row-item row-item-added">POKEMON</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">6</td>
+                  <td class="prod-list-row-item row-item-added">PKM001002</td>
+                  <td class="prod-list-row-item row-item-added">Dragonite Hi!</td>
+                  <td class="prod-list-row-item row-item-added">POKEMON</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">7</td>
+                  <td class="prod-list-row-item row-item-added">PKM001003</td>
+                  <td class="prod-list-row-item row-item-added">Pidgeotto Flying</td>
+                  <td class="prod-list-row-item row-item-added">POKEMON</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">8</td>
+                  <td class="prod-list-row-item row-item-added">PKM001004</td>
+                  <td class="prod-list-row-item row-item-added">Pikachu Smiley</td>
+                  <td class="prod-list-row-item row-item-added">POKEMON</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">9</td>
+                  <td class="prod-list-row-item row-item-added">PKM001005</td>
+                  <td class="prod-list-row-item row-item-added">Vulpix Fancy</td>
+                  <td class="prod-list-row-item row-item-added">POKEMON</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">10</td>
+                  <td class="prod-list-row-item row-item-added">HPT001001</td>
+                  <td class="prod-list-row-item row-item-added">Harry Potter & Hegwid</td>
+                  <td class="prod-list-row-item row-item-added">HARRY POTTER</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">11</td>
+                  <td class="prod-list-row-item row-item-added">HPT001002</td>
+                  <td class="prod-list-row-item row-item-added">Herminione Ball Dress</td>
+                  <td class="prod-list-row-item row-item-added">HARRY POTTER</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">12</td>
+                  <td class="prod-list-row-item row-item-added">HPT001003</td>
+                  <td class="prod-list-row-item row-item-added">Luna Lovegood Lion Mask</td>
+                  <td class="prod-list-row-item row-item-added">HARRY POTTER</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+                <tr class="prod-list-row">
+                  <td class="prod-list-row-item row-item-added">13</td>
+                  <td class="prod-list-row-item row-item-added">HPT001004</td>
+                  <td class="prod-list-row-item row-item-added">Snape Patronus</td>
+                  <td class="prod-list-row-item row-item-added">HARRY POTTER</td>
+                  <td class="prod-list-row-item row-item-added">
+                    <div class="row-item-added-icons">
+                      <img src="/images/icons/edit_pencil.svg" alt="lapiz">
+                      <img src="/images/icons/delete_trash.svg" alt="basura">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>
