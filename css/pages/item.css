@@ -24,6 +24,21 @@
     font-weight: 400;
 }
 
+.products-buttons-adder{
+    display: flex;
+    gap: var(--spacing-16);
+}
+
+.products-buttons-wrapper-adder button{
+    background-color: #4F4F4F;
+    color: #ffffff;
+}
+
+.products-buttons-wrapper-adder button:hover{
+    background-color: #4f4f4fcb;
+    transition: background .2s ease-in-out;
+}
+
 .products-text{
     font-family: var(--secondary-font);
     font-size: 24px;
