@@ -7,5 +7,7 @@ add.addEventListener(
   () => (quantity.value = Number(quantity.value) + 1)
 );
 subtrack.addEventListener("click", () => {
-  quantity.value = Number(quantity.value) - 1;
+  if (quantity.value > 0) {
+    quantity.value = Number(quantity.value) - 1;
+  }
 });
