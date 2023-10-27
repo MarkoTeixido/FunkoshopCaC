@@ -32,3 +32,38 @@
 }
 
 /* Slider style end */
+
+/*---------------*/
+/*  Responsive  */
+/*--------------*/
+
+/* Phone and Tablet */
+
+@media screen and (max-width: 850px) {
+    .slider{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
+        padding: var(--spacing-24) var(--spacing-24);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slider{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
+        padding: var(--spacing-24) var(--spacing-12);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slider{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
+        padding: var(--spacing-24) var(--spacing-8);
+    }
+}
+
+/* Phone and Tablet end */
