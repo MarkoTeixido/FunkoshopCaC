@@ -64,6 +64,14 @@
         gap: var(--spacing-36);
         padding: var(--spacing-24) var(--spacing-16);
     }
+
+    .glide__arrow--left{
+        left: -0.5em !important;
+    }
+    
+    .glide__arrow--right{
+        right: -0.5em !important;
+    }
 }
 
 /* Phone and Tablet end */
