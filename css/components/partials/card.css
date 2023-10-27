@@ -1,5 +1,9 @@
 /* Card style */
 
+.card{
+    width: 100%;
+}
+
 .card-content{
     display: flex;
     flex-direction: column;
@@ -66,35 +70,10 @@
 
 /* Phone and Tablet */
 
-@media screen and (max-width:1000px){
-
-    /* Card style */
-    
-    .card{
-        min-width: 360px;
-        left: 0;
-        position: sticky;
-        object-fit: cover;
-        scroll-snap-align: center;
+@media screen and (max-width: 750px) {
+    .card-image-tag{
+        right: 1rem;
     }
-
-    /* Card style end */
-}
-
-@media screen and (max-width:750px){
-    
-    /* Card style */
-
-    .card{
-        flex-basis: 100%;
-        width: 350px;
-        left: 0;
-        position: sticky;
-        object-fit: cover;
-        scroll-snap-align: center;
-    }
-
-    /* Card style end */
 }
 
 /* Phone and Tablet end */
