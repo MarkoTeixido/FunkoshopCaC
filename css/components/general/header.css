@@ -66,6 +66,7 @@ header{
     display: none;
 }
 
+
 /* Header style end*/
 
 /*---------------*/
@@ -97,22 +98,9 @@ header{
         gap: var(--spacing-20);
     }
 
-    .login{
+    /* .with-submenu{
         display: none;
-    }
-
-    .contact{
-        display: none;
-    }
-
-    .with-submenu{
-        display: none;
-    }
-
-    .navbar-bars{
-        display: unset;
-        font-size: medium;
-    }
+    } */
 
     /* Header style end */
 }
