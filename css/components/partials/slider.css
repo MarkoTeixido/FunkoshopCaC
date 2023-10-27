@@ -7,10 +7,6 @@
     padding: var(--spacing-24) var(--spacing-128);
 }
 
-.slider-articles{
-    display: flex;
-}
-
 .slider-item:hover{
     background-color: rgba(31, 31, 31, 0.05);
     transition: background .3s ease-in-out;
@@ -43,65 +39,39 @@
 
 /* Phone and Tablet */
 
-@media screen and (max-width:1000px){
-    
-    /* Slider style */
-    
-    .wrapper-slider{
-        padding: var(--spacing-36) 0;
-    }
-
+@media screen and (max-width: 850px) {
     .slider{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
         padding: var(--spacing-24) var(--spacing-24);
     }
-
-    .slider-title{
-        font-size: var(--font-jumbo);
-        text-align: center;
-    }
-
-    .slider-articles{
-        /*position: relative;*/
-        display: flex;
-        gap: var(--spacing-24);
-        max-width: 50rem;
-        width: 100%;
-        background:transparent;
-        padding: var(--spacing-28) 0;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        scroll-padding: 8rem;
-    }
-
-    /* Slider style end */
 }
 
-@media screen and (max-width:750px) {
-
-    /* Slider style */
-
-    .slider-articles{
-        max-width: 40rem;
-        scroll-padding: 3rem; 
-    }
-
-    .slider-item{
-        flex-basis: 100%;
-    }
-
-    /* Slider style end*/
-}
-
-@media screen and (max-width:400px){
-
-    /* Slider style */
-
+@media screen and (max-width: 550px) {
     .slider{
-        padding: var(--spacing-24) var(--spacing-12);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
+        padding: var(--spacing-24) var(--spacing-20);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slider{
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-36);
+        padding: var(--spacing-24) var(--spacing-16);
     }
 
-    /* Slider style end*/
+    .glide__arrow--left{
+        left: -0.5em !important;
+    }
+    
+    .glide__arrow--right{
+        right: -0.5em !important;
+    }
 }
 
 /* Phone and Tablet end */
