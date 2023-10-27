@@ -16,23 +16,28 @@
   <body>
     <!--Header section with NavBar-->
     <header>
-      <nav class="navbar-header container">
-        <div>
-          <a href="../index.html"
-            ><img
-              src="../images/branding/logo_light_horizontal.svg"
-              alt="Isologotipo de Funkoshop"
-          /></a>
-        </div>
-        <ul class="header-navbar-menu">
-          <li class="navbar-item">
-            <a class="navbar-link" href="../pages/shop.html">VER TIENDA</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="../pages/admin.html">ADMIN</a>
-          </li>
-          <li class="navbar-item"><a class="navbar-link" href="#">SALIR</a></li>
-        </ul>
+      <nav class="navbar-header navbar-header-admin container">
+          <div class="navbar-logo">
+              <a href="../index.html">
+                  <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+              </a>
+          </div>
+          <div class="navbar-bars navbar-bars-admin">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </div>
+          <ul class="navbar-menu navbar-menu-admin">
+              <li class="navbar-item with-submenu">
+                  <a class="navbar-link with-icon" href="../pages/shop.html">VER TIENDA</a>
+              </li>
+              <!--Luego realizar la página de contacto-->
+              <li class="navbar-item contact">
+                  <a class="navbar-link" href="../pages/admin.html">ADMIN</a>
+              </li>
+              <!--Luego realizar la página de contacto-->
+              <li class="navbar-item login">
+                  <a class="navbar-link" href="../index.html">SALIR</a>
+              </li>
+          </ul>
       </nav>
     </header>
     <!--Header section with NavBar end-->
