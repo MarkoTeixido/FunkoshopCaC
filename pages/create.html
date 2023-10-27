@@ -15,15 +15,27 @@
 <body>
     <!--Header section with NavBar-->
     <header>
-        <nav class="navbar-header container">
-            <div>
-                <a href="../index.html"><img src="../images/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de Funkoshop"></a>
+        <nav class="navbar-header navbar-header-admin container">
+            <div class="navbar-logo">
+                <a href="../index.html">
+                    <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+                </a>
             </div>
-            <ul class="header-navbar-menu">
-                <li class="navbar-item"><a class="navbar-link" href="../pages/shop.html">VER TIENDA</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="../pages/admin.html">ADMIN</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">SALIR</a></li>
+            <div class="navbar-bars navbar-bars-admin">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+            <ul class="navbar-menu navbar-menu-admin">
+                <li class="navbar-item with-submenu">
+                    <a class="navbar-link with-icon" href="../pages/shop.html">VER TIENDA</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item contact">
+                    <a class="navbar-link" href="../pages/admin.html">ADMIN</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item login">
+                    <a class="navbar-link" href="../index.html">SALIR</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -46,7 +58,7 @@
                                 <option value="pokemon">Pokemon</option>
                                 <option value="harryPotter">Harry Potter</option>
                             </select>
-    
+
                             <label for="license" class="label-create license">Licencia:</label>
                             <select id="license" name="licencia" class="select-createItem">
                                 <option disabled selected>Seleccionar</option>
@@ -69,10 +81,10 @@
                         <div class="container-form__fields">
                             <label for="sku" class="label-create">SKU:</label>
                             <input id="sku" name="sku" type="text" placeholder="SSK111AB001" class="input-create">
-    
+
                             <label for="price" class="label-create">Precio:</label>
                             <input id="price" name="precio" type="number" placeholder="$0.000,00" class="input-create">
-    
+
                             <label for="stock" class="label-create">Stock:</label>
                             <input id="stock" name="stock" type="number" placeholder="0" class="input-create">
                         </div>
@@ -80,7 +92,7 @@
                         <div class="container-form__fields">
                             <label for="discount" class="label-create">Descuento:</label>
                             <input id="discount" name="descuento" type="number" placeholder="0%" class="input-create">
-    
+
                             <label for="cuotas" class="label-create">Cuotas:</label>
                             <select id="cuotas" name="cuotas" class="select-createItem">
                                 <option selected>3 Cuotas sin interes</option>

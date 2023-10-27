@@ -15,15 +15,27 @@
 <body>
     <!--Header section with NavBar-->
     <header>
-        <nav class="navbar-header container">
-            <div>
-                <a href="../index.html"><img src="../images/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de Funkoshop"></a>
+        <nav class="navbar-header navbar-header-admin container">
+            <div class="navbar-logo">
+                <a href="../index.html">
+                    <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
+                </a>
             </div>
-            <ul class="header-navbar-menu">
-                <li class="navbar-item"><a class="navbar-link" href="../pages/shop.html">VER TIENDA</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="../pages/admin.html">ADMIN</a></li>
-                <li class="navbar-item"><a class="navbar-link" href="#">SALIR</a></li>
+            <div class="navbar-bars navbar-bars-admin">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+            <ul class="navbar-menu navbar-menu-admin">
+                <li class="navbar-item with-submenu">
+                    <a class="navbar-link with-icon" href="../pages/shop.html">VER TIENDA</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item contact">
+                    <a class="navbar-link" href="../pages/admin.html">ADMIN</a>
+                </li>
+                <!--Luego realizar la página de contacto-->
+                <li class="navbar-item login">
+                    <a class="navbar-link" href="../index.html">SALIR</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -36,31 +48,35 @@
             <h3 class="subtitle-section">Completa el formulario para ser parte del mundo de los Funkos</h3>
             <div id="container-form__register">
                 <form action="" method="post" id="formRegister" class="formRegister">
-                    
+
                     <div class="container--labelsAndInputs">
                         <div class="container--labels">
                             <label for="name" class="label-register">Nombre:</label>
                             <label for="lastName" class="label-register">Apellido:</label>
                             <label for="email" class="label-register">Email:</label>
                             <label for="password" class="label-register">Contraseña:</label>
-                            <label for="repPassword"  class="label-register">Repita Contraseña:</label>
+                            <label for="repPassword" class="label-register">Repita Contraseña:</label>
                         </div>
                         <div class="container--inputs">
                             <input name="nombre" id="name" type="text" placeholder="John" class="input-register">
                             <input name="apellido" id="lastName" type="text" placeholder="Doe" class="input-register">
-                            <input name="email" id="email" type="email" placeholder="johndoe@correo.com" class="input-register">
-                            <input name="contrasenia" id="password" type="password" placeholder="●●●●●●●●●●" class="input-register">
-                            <input name="repContrasenia" id="repPassword" type="password" placeholder="●●●●●●●●●●" class="input-register">
+                            <input name="email" id="email" type="email" placeholder="johndoe@correo.com"
+                                class="input-register">
+                            <input name="contrasenia" id="password" type="password" placeholder="●●●●●●●●●●"
+                                class="input-register">
+                            <input name="repContrasenia" id="repPassword" type="password" placeholder="●●●●●●●●●●"
+                                class="input-register">
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="container--form__termAndCondi">
-                        
+
                         <button type="submit" class="btn-register">Registrar</button>
                         <div class="termAndCondi--Button">
                             <input id="termAndCondi" name="termAndCondi" type="checkbox">
-                            <label for="termAndCondi">Acepta <a href="" class="linkToTermAndCondi">Terminos y Condiciones</a></label>
+                            <label for="termAndCondi">Acepta <a href="" class="linkToTermAndCondi">Terminos y
+                                    Condiciones</a></label>
                         </div>
                     </div>
                 </form>
