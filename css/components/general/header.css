@@ -44,7 +44,7 @@ header{
     display: none;
     position: absolute;
     background-color: var(--dark-background-solid);
-    z-index: 3;
+    z-index: 5;
 }
 
 .submenu-item{
@@ -63,6 +63,10 @@ header{
 }
 
 .navbar-bars{
+    display: none;
+}
+
+.cart-icon-mobile{
     display: none;
 }
 
@@ -91,22 +95,46 @@ header{
     .navbar-logo{
         max-width: 150px;
     }
-    
-    .navbar-menu{
+
+    .inactive{
+        display: none;
+    }
+
+    .active{
+        transition: background .3s ease-in-out;
+        position: absolute;
         align-items: center;
-        gap: var(--spacing-20);
+        padding-top: var(--spacing-16);
+        gap: var(--spacing-16);
+        top: var(--spacing-68);
+        left: 0;
+        z-index: 3;
+        background-color: var(--primary-solid);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
     }
 
-    .login{
+    .active .with-submenu, .contact, .login{
+        display: unset;
+    }
+
+    .active li{
+        padding-top: var(--spacing-12);
+    }
+
+    .active .navbar-link:hover{
+        background-color: var(--dark-background-solid);
+        transition: background .3s ease-in-out;
+    }
+
+    .active .cart-icon{
         display: none;
     }
 
-    .contact{
-        display: none;
-    }
-
-    .with-submenu{
-        display: none;
+    .cart-icon-mobile{
+        display: unset;
     }
 
     .navbar-bars{
@@ -120,10 +148,6 @@ header{
 @media screen and (max-width:750px) {
     
     /* Header style */
-
-    .navbar-header{
-        position: sticky;
-    }
 
     /* Header style end*/
 }
