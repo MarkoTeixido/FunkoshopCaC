@@ -23,9 +23,12 @@
                     <img src="../images/branding/logo_light_horizontal.svg" alt="Isologotipo de Funkoshop">
                 </a>
             </div>
-            <ul class="navbar-menu">
+            <ul class="navbar-menu inactive">
                 <li class="navbar-item with-submenu">
-                    <a class="navbar-link with-icon" href="./shop.html">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="navbar-link-shop with-icon">
+                        <a class="navbar-link with-icon" href="./pages/shop.html">SHOP</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                     <ul class="submenu">
                         <li class="submenu-item">
                             <a href="#">Funkos</a>
@@ -52,6 +55,11 @@
                     </a>
                 </li>
             </ul>
+            <div class="navbar-item cart-icon-mobile">
+                <a class="navbar-item-cart" href="../pages/carrito.html">
+                    <img src="../images/icons/cart-icon.svg" alt="Icono de carrito">
+                </a>
+            </div>
         </nav>
     </header>
     <!--Header section with NavBar end-->
@@ -275,7 +283,7 @@
             <section class="pagination">
                 <ul class="pagination-list">
                     <li class="pagination-item chevron"><a href="/"><i class="fa-solid fa-angle-left"></i></a></li>
-                    <li class="pagination-item"><a href="/" class="active">1</a></li>
+                    <li class="pagination-item"><a href="/">1</a></li>
                     <li class="pagination-item pagination-mid"><a href="/">2</a></li>
                     <li class="pagination-item"><a href="/">...</a></li>
                     <li class="pagination-item pagination-mid"><a href="/">9</a></li>
@@ -312,5 +320,9 @@
         <p class="footer-copyright">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!--Footer section end-->
+
+    <!--Scripts section-->
+    <script src="../js/menu-toggle.js"></script>
+    <!--Scripts section end-->
 </body>
 </html>
