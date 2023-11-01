@@ -175,7 +175,7 @@ header{
     /* Header style */
     
     header{
-        padding: var(--spacing-8) var(--spacing-12);
+        padding: var(--spacing-8);
     }
 
     /* Header style end */
