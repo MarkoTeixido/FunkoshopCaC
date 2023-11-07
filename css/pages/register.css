@@ -58,6 +58,7 @@
 }
 
 .input-register{
+    width: 100%;
     font-family: var(--primary-font);
     font-size: var(--font-medium);
     padding: var(--spacing-20) 0 0;

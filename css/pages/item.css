@@ -132,28 +132,6 @@ input[type=button]:hover, input[type=submit]:hover{
 
 @media screen and (max-width:1000px) {
 
-    /* Banner style */
-
-    .hero{
-        padding: 12rem;
-    }
-
-    .hero-content{
-        align-items: center;
-        padding: var(--spacing-8);
-    }
-
-    .hero-title{
-        text-align: center;
-    }
-
-    .hero-text{
-        text-align: center;
-    }
-
-    /* Banner style end */
-
-
     /* All articles style */
 
     .products{

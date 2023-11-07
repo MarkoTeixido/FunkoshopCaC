@@ -117,12 +117,12 @@
     /* Banner style */
 
     .hero{
-        padding: 12rem;
+        padding: 9.5rem var(--spacing-20);
     }
 
     .hero-content{
         align-items: center;
-        padding: var(--spacing-8);
+        padding: 0px;
     }
 
     .hero-title{
@@ -191,8 +191,8 @@
 
     /* Banner style */
 
-    .hero{
-        padding: 8rem;
+    .hero-title{
+        font-size: var(--font-display);
     }
 
     .collection{
